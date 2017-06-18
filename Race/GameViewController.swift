@@ -465,9 +465,6 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
     
     func sendData(_ dataType: String)
     {
-        
-        var error: NSError?
-        
         if dataType == "Progress"
         {
             let data = NSMutableData()
