@@ -33,30 +33,28 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate, GKMa
     @IBOutlet weak var helpConstraint: NSLayoutConstraint!
     @IBOutlet weak var coinsConstraint: NSLayoutConstraint!
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
-        self.navigationController?.isNavigationBarHidden = true
-        
-        if self.view.frame.size.height == 480
+        if let navController = navigationController
         {
+            navController.isNavigationBarHidden = true
+        }
+        
+        switch view.frame.size.height {
+            
+        case 480:
             bg.image = UIImage(named: "4S BG")
-        }
-        else if self.view.frame.size.width == 768
-        {
+        case 768:
             bg.image = UIImage(named: "Race BG iPad Main")
-        }
-        else if self.view.frame.size.height == 568.0
-        {
+        case 568:
             bg.image = UIImage(named: "A31 BG 5")
-        }
-        
-        
+        default:
+            bg.image = UIImage(named: "A31 BG 5")
 
+        }
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         
@@ -65,17 +63,12 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate, GKMa
         authenticateLocalPlayer()
         
         let wins = UserDefaults.standard.integer(forKey: "wins")
-        
         let losses = UserDefaults.standard.integer(forKey: "losses")
-        
         let draws = UserDefaults.standard.integer(forKey: "draws")
-        
         let coins = UserDefaults.standard.integer(forKey: "coins")
         
         recordLabel.text = "\(wins)-\(losses)-\(draws)"
-        
         coinsLabel.text = "Coins: \(coins)"
-       
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -83,7 +76,6 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate, GKMa
         super.viewDidAppear(animated)
         
         animateIn()
-
     }
     
     override func viewWillLayoutSubviews() {
@@ -92,7 +84,6 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate, GKMa
         
         if !didLayoutSubviews
         {
-            
             let viewSize = self.view.frame.size
             
             recordConstraint.constant = 8 - viewSize.height
@@ -281,14 +272,11 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate, GKMa
             self.recordLabel.center.y += (self.view.frame.size.height + 10)
             self.coinsLabel.center.y += (self.view.frame.size.height + 10)
 
-
             self.playButton.center.y -= (self.view.frame.size.height + 10)
             self.leaderboardButton.center.y -= (self.view.frame.size.height + 10)
             self.shopButton.center.y -= (self.view.frame.size.height + 10)
             self.helpButton.center.y -= (self.view.frame.size.height + 10)
 
-            
-            
             }) { (success) -> Void in
                 
                 UIView.animate(withDuration: 0.1, delay: 0, options: UIViewAnimationOptions.curveEaseOut, animations: { () -> Void in
@@ -304,11 +292,8 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate, GKMa
                     
                     }, completion: { (success) -> Void in
                         
-                        
                 })
-
         }
-
     }
     
     func animateOut(_ toViewController: UIViewController)

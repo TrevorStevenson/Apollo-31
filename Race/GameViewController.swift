@@ -459,8 +459,6 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
         }
         
         unarchiver.finishDecoding()
-        
-        
     }
     
     func sendData(_ dataType: String)
