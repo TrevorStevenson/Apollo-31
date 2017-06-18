@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="frZ-9Q-HQU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Starjedi.ttf">
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+            <string>StarJedi</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="zWa-wp-23E">
+            <objects>
+                <navigationController id="frZ-9Q-HQU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B6w-Mh-y0P">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="k5X-K1-ZG6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XK4-cr-GPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-163" y="349"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MVC" id="BYZ-38-t0r" customClass="MainViewController" customModule="Apollo_31" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Race Background" translatesAutoresizingMaskIntoConstraints="NO" id="2K4-tt-a4t">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0-0-0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfd-x4-LYj">
+                                <rect key="frame" x="16" y="28" width="51" height="28"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1E-qp-0tE">
+                                <rect key="frame" x="534" y="542" width="50" height="50"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
+                                <state key="normal" title="?" backgroundImage="Accessory Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="help:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ejk-L1-dDM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coins: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4E-Gt-KZU">
+                                <rect key="frame" x="505" y="28" width="79" height="28"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mfd-x4-LYj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="6DV-y6-VYy"/>
+                            <constraint firstItem="2K4-tt-a4t" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9RB-9Q-kd1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="w1E-qp-0tE" secondAttribute="bottom" constant="8" id="JSJ-bj-xbi"/>
+                            <constraint firstAttribute="trailing" secondItem="w1E-qp-0tE" secondAttribute="trailing" constant="16" id="OLA-mQ-VrU"/>
+                            <constraint firstItem="mfd-x4-LYj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="cmD-Ht-uov"/>
+                            <constraint firstItem="P4E-Gt-KZU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dR4-dk-8oG"/>
+                            <constraint firstAttribute="trailing" secondItem="2K4-tt-a4t" secondAttribute="trailing" id="f31-ae-fEs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2K4-tt-a4t" secondAttribute="bottom" id="kYg-ng-xEh"/>
+                            <constraint firstAttribute="trailing" secondItem="P4E-Gt-KZU" secondAttribute="trailing" constant="16" id="rmb-e2-Vsn"/>
+                            <constraint firstItem="2K4-tt-a4t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zK1-5U-we6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rip-HA-U3w"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="bg" destination="2K4-tt-a4t" id="M2g-x9-G9b"/>
+                        <outlet property="coinsConstraint" destination="dR4-dk-8oG" id="Eyk-lI-XAL"/>
+                        <outlet property="coinsLabel" destination="P4E-Gt-KZU" id="luS-0V-iG6"/>
+                        <outlet property="helpButton" destination="w1E-qp-0tE" id="Qno-fa-Vai"/>
+                        <outlet property="helpConstraint" destination="JSJ-bj-xbi" id="f3d-aa-w3a"/>
+                        <outlet property="recordConstraint" destination="6DV-y6-VYy" id="99S-a6-p1b"/>
+                        <outlet property="recordLabel" destination="mfd-x4-LYj" id="O68-Ib-URk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="447" y="349"/>
+        </scene>
+        <!--Shop View Controller-->
+        <scene sceneID="bhL-Ll-Nvs">
+            <objects>
+                <viewController storyboardIdentifier="SVC" id="0pI-fH-HDI" customClass="ShopViewController" customModule="Apollo_31" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qs1-g0-l4A"/>
+                        <viewControllerLayoutGuide type="bottom" id="dDS-jU-8Rm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Upz-eH-AAS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Race Background_Plain" translatesAutoresizingMaskIntoConstraints="NO" id="m4w-Sz-bJV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to see more" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80m-HB-B2s">
+                                <rect key="frame" x="218" y="541" width="164" height="24"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4u-WW-qQ6">
+                                <rect key="frame" x="16" y="28" width="50" height="50"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="12"/>
+                                <state key="normal" title="back" backgroundImage="Accessory Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="0pI-fH-HDI" eventType="touchUpInside" id="yBr-bL-RJd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W4u-WW-qQ6" firstAttribute="top" secondItem="qs1-g0-l4A" secondAttribute="bottom" constant="8" id="Efg-N1-2Sz"/>
+                            <constraint firstItem="W4u-WW-qQ6" firstAttribute="leading" secondItem="Upz-eH-AAS" secondAttribute="leading" constant="16" id="GWU-BP-PT4"/>
+                            <constraint firstItem="dDS-jU-8Rm" firstAttribute="top" secondItem="80m-HB-B2s" secondAttribute="bottom" constant="35" id="Hbm-bf-Kq5"/>
+                            <constraint firstItem="m4w-Sz-bJV" firstAttribute="top" secondItem="Upz-eH-AAS" secondAttribute="top" id="LjR-na-o41"/>
+                            <constraint firstAttribute="trailing" secondItem="m4w-Sz-bJV" secondAttribute="trailing" id="ftn-gv-Q5e"/>
+                            <constraint firstItem="dDS-jU-8Rm" firstAttribute="top" secondItem="m4w-Sz-bJV" secondAttribute="bottom" id="h5a-w7-YZ1"/>
+                            <constraint firstItem="m4w-Sz-bJV" firstAttribute="centerX" secondItem="80m-HB-B2s" secondAttribute="centerX" id="jyu-MV-lJV"/>
+                            <constraint firstItem="m4w-Sz-bJV" firstAttribute="leading" secondItem="Upz-eH-AAS" secondAttribute="leading" id="lSF-3I-Jcn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QJ9-jX-COs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="447" y="991"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="XkA-Gf-6Nn">
+            <objects>
+                <pageViewController storyboardIdentifier="PVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="E7Z-eV-QsG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="13N-zF-9cx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055" y="991"/>
+        </scene>
+        <!--Coin Shop View Controller-->
+        <scene sceneID="bGc-6A-TIX">
+            <objects>
+                <viewController storyboardIdentifier="CSVC" id="5UF-TH-3ok" customClass="CoinShopViewController" customModule="Apollo_31" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E7L-rC-Txh"/>
+                        <viewControllerLayoutGuide type="bottom" id="NiB-LE-xd0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s6B-Eq-igz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coin Shop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfW-Je-GDJ">
+                                <rect key="frame" x="228" y="28" width="144" height="40"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,000,000 Coins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jS-G0-eIW">
+                                <rect key="frame" x="16" y="212" width="166" height="29"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10,000,000 Coins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGG-CV-aiS">
+                                <rect key="frame" x="16" y="266" width="180" height="29"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100,000 Coins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YU-r0-MQa">
+                                <rect key="frame" x="16" y="158" width="146" height="29"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100,000,000 Coins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTg-Ya-lHK">
+                                <rect key="frame" x="16" y="320" width="193" height="29"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNE-s6-BWd">
+                                <rect key="frame" x="16" y="76" width="568" height="74"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="9X2-Ph-DlN"/>
+                                </constraints>
+                                <string key="text">Buy coins to be able to use more power ups, humuliate your opponents in your online matches, and boost your score to the top of the leaderboards!</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9X2-Ph-DlN"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7WE-VU-0OQ">
+                                <rect key="frame" x="534" y="202" width="50" height="50"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="$1.99" backgroundImage="Accessory Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mCoins:" destination="5UF-TH-3ok" eventType="touchUpInside" id="F3f-We-lpM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffN-JF-UA1">
+                                <rect key="frame" x="534" y="256" width="50" height="50"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="$4.99" backgroundImage="Accessory Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tmCoins:" destination="5UF-TH-3ok" eventType="touchUpInside" id="dq8-VU-9qo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSb-S3-ttu">
+                                <rect key="frame" x="534" y="310" width="50" height="50"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="$9.99" backgroundImage="Accessory Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hmCoins:" destination="5UF-TH-3ok" eventType="touchUpInside" id="pB6-j5-5PB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDT-zT-qN4">
+                                <rect key="frame" x="534" y="148" width="50" height="50"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="$0.99" backgroundImage="Accessory Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="htCoins:" destination="5UF-TH-3ok" eventType="touchUpInside" id="bov-Mb-J9B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NTg-Ya-lHK" firstAttribute="leading" secondItem="s6B-Eq-igz" secondAttribute="leading" constant="16" id="1WK-Ty-1uZ"/>
+                            <constraint firstItem="NTg-Ya-lHK" firstAttribute="top" secondItem="oGG-CV-aiS" secondAttribute="bottom" constant="25" id="4F9-zP-VpF"/>
+                            <constraint firstAttribute="trailing" secondItem="KNE-s6-BWd" secondAttribute="trailing" constant="16" id="7Ky-BY-wCu"/>
+                            <constraint firstItem="KNE-s6-BWd" firstAttribute="leading" secondItem="s6B-Eq-igz" secondAttribute="leading" constant="16" id="7P3-iX-2Zv"/>
+                            <constraint firstItem="8jS-G0-eIW" firstAttribute="leading" secondItem="s6B-Eq-igz" secondAttribute="leading" constant="16" id="7ht-8A-SRC"/>
+                            <constraint firstItem="YDT-zT-qN4" firstAttribute="centerY" secondItem="1YU-r0-MQa" secondAttribute="centerY" id="8Wf-r1-D7k"/>
+                            <constraint firstItem="oGG-CV-aiS" firstAttribute="top" secondItem="8jS-G0-eIW" secondAttribute="bottom" constant="25" id="BZc-7K-zzd"/>
+                            <constraint firstItem="oGG-CV-aiS" firstAttribute="centerY" secondItem="ffN-JF-UA1" secondAttribute="centerY" id="Emi-MZ-HgV"/>
+                            <constraint firstAttribute="trailing" secondItem="JSb-S3-ttu" secondAttribute="trailing" constant="16" id="G04-Eh-zDA"/>
+                            <constraint firstItem="JSb-S3-ttu" firstAttribute="centerY" secondItem="NTg-Ya-lHK" secondAttribute="centerY" id="M3h-fa-52W"/>
+                            <constraint firstItem="8jS-G0-eIW" firstAttribute="top" secondItem="1YU-r0-MQa" secondAttribute="bottom" constant="25" id="Ojk-M5-ao8"/>
+                            <constraint firstItem="1YU-r0-MQa" firstAttribute="top" secondItem="KNE-s6-BWd" secondAttribute="bottom" constant="8" id="PIm-vm-6Zh"/>
+                            <constraint firstItem="EfW-Je-GDJ" firstAttribute="top" secondItem="E7L-rC-Txh" secondAttribute="bottom" constant="8" id="QQj-ep-hlk"/>
+                            <constraint firstAttribute="trailing" secondItem="7WE-VU-0OQ" secondAttribute="trailing" constant="16" id="TNO-rw-kKR"/>
+                            <constraint firstAttribute="trailing" secondItem="YDT-zT-qN4" secondAttribute="trailing" constant="16" id="WrL-W5-Dg8"/>
+                            <constraint firstItem="KNE-s6-BWd" firstAttribute="top" secondItem="EfW-Je-GDJ" secondAttribute="bottom" constant="8" id="XxT-9d-g6C"/>
+                            <constraint firstItem="1YU-r0-MQa" firstAttribute="leading" secondItem="s6B-Eq-igz" secondAttribute="leading" constant="16" id="ZZF-C0-hxe"/>
+                            <constraint firstAttribute="trailing" secondItem="ffN-JF-UA1" secondAttribute="trailing" constant="16" id="aHf-dr-2hJ"/>
+                            <constraint firstAttribute="centerX" secondItem="EfW-Je-GDJ" secondAttribute="centerX" id="lKK-ma-6B1"/>
+                            <constraint firstItem="oGG-CV-aiS" firstAttribute="leading" secondItem="s6B-Eq-igz" secondAttribute="leading" constant="16" id="s1P-7S-8bS"/>
+                            <constraint firstItem="8jS-G0-eIW" firstAttribute="centerY" secondItem="7WE-VU-0OQ" secondAttribute="centerY" id="x43-N0-tMa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coinShopDescription" destination="KNE-s6-BWd" id="pfp-dG-UiV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="71s-u5-4XT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="447" y="1628"/>
+        </scene>
+        <!--Game Mode View Controller-->
+        <scene sceneID="W9x-hg-8S4">
+            <objects>
+                <viewController storyboardIdentifier="GMVC" id="Acy-mj-aaN" customClass="GameModeViewController" customModule="Apollo_31" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QKC-jm-cOc"/>
+                        <viewControllerLayoutGuide type="bottom" id="VpI-3O-czb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RC0-A3-ycy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Race Background" translatesAutoresizingMaskIntoConstraints="NO" id="kat-sy-htu">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfd-aR-Tyw">
+                                <rect key="frame" x="0.0" y="264" width="600" height="80"/>
+                                <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Sb5-19-P2c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
+                                <state key="normal" title="Time Trials" backgroundImage="Race Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playGame:" destination="Acy-mj-aaN" eventType="touchUpInside" id="RkF-cS-mqX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sP-CA-OXJ">
+                                <rect key="frame" x="16" y="28" width="50" height="50"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="12"/>
+                                <state key="normal" title="back" backgroundImage="Accessory Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="Acy-mj-aaN" eventType="touchUpInside" id="RT4-1M-yjm"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRB-2R-D6V">
+                                <rect key="frame" x="0.0" y="176" width="600" height="80"/>
+                                <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ZIr-5m-Tc1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
+                                <state key="normal" title="online" backgroundImage="Race Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playGame:" destination="Acy-mj-aaN" eventType="touchUpInside" id="br3-ZK-jh5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cfd-aR-Tyw" secondAttribute="trailing" id="74u-aR-t9T"/>
+                            <constraint firstItem="gRB-2R-D6V" firstAttribute="leading" secondItem="RC0-A3-ycy" secondAttribute="leading" id="7gc-Il-qfC"/>
+                            <constraint firstAttribute="trailing" secondItem="kat-sy-htu" secondAttribute="trailing" id="IhD-8J-RZt"/>
+                            <constraint firstItem="0sP-CA-OXJ" firstAttribute="top" secondItem="QKC-jm-cOc" secondAttribute="bottom" constant="8" id="WEw-PZ-LpS"/>
+                            <constraint firstItem="kat-sy-htu" firstAttribute="leading" secondItem="RC0-A3-ycy" secondAttribute="leading" id="X7y-Q5-YYS"/>
+                            <constraint firstItem="VpI-3O-czb" firstAttribute="top" secondItem="kat-sy-htu" secondAttribute="bottom" id="XBc-dV-UUO"/>
+                            <constraint firstAttribute="centerY" secondItem="gRB-2R-D6V" secondAttribute="centerY" id="YBz-Ul-yTy"/>
+                            <constraint firstItem="0sP-CA-OXJ" firstAttribute="leading" secondItem="RC0-A3-ycy" secondAttribute="leading" constant="16" id="a1t-Vk-Jr5"/>
+                            <constraint firstItem="cfd-aR-Tyw" firstAttribute="leading" secondItem="RC0-A3-ycy" secondAttribute="leading" id="hDC-rK-auA"/>
+                            <constraint firstAttribute="centerY" secondItem="cfd-aR-Tyw" secondAttribute="centerY" constant="-4" id="j3E-ks-YwP"/>
+                            <constraint firstAttribute="trailing" secondItem="gRB-2R-D6V" secondAttribute="trailing" id="t79-c0-uE0"/>
+                            <constraint firstItem="cfd-aR-Tyw" firstAttribute="top" secondItem="gRB-2R-D6V" secondAttribute="bottom" constant="8" id="wlc-oD-AW1"/>
+                            <constraint firstItem="kat-sy-htu" firstAttribute="top" secondItem="RC0-A3-ycy" secondAttribute="top" id="xSn-Fv-OfK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="YBz-Ul-yTy"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="bg" destination="kat-sy-htu" id="0WF-kQ-Vt9"/>
+                        <outlet property="onlineHeight" destination="ZIr-5m-Tc1" id="2Hu-eL-6Gy"/>
+                        <outlet property="trialsHeight" destination="Sb5-19-P2c" id="KDi-P8-29k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oDk-60-vbz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-163" y="991"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="UVH-G7-DoG">
+            <objects>
+                <viewController storyboardIdentifier="GVC" id="PrD-BE-qlR" customClass="GameViewController" customModule="Apollo_31" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5f0-KN-puP"/>
+                        <viewControllerLayoutGuide type="bottom" id="vqc-KX-Ru3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d8c-ld-OJD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Race Background_Plain" translatesAutoresizingMaskIntoConstraints="NO" id="l12-iy-YnL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DIt-Q9-r9O">
+                                <rect key="frame" x="363" y="511" width="58" height="23"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xjv-UB-YTv">
+                                <rect key="frame" x="531" y="511" width="58" height="23"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQM-ng-B5Y">
+                                <rect key="frame" x="184" y="511" width="58" height="23"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GdN-C0-7A5">
+                                <rect key="frame" x="16" y="84" width="568" height="3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="xS2-jG-W0D"/>
+                                </constraints>
+                                <color key="progressTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35/100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKc-Kj-a6i">
+                                <rect key="frame" x="264" y="94" width="72" height="32"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="opponent: 26/100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PNJ-4z-myf">
+                                <rect key="frame" x="16" y="134" width="568" height="40"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="axk-4t-dJl">
+                                <rect key="frame" x="16" y="230" width="568" height="201"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwm-z0-CqN">
+                                <rect key="frame" x="16" y="542" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="hwp-xD-qXl"/>
+                                    <constraint firstAttribute="height" constant="50" id="z0U-lv-nx7"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="powerUp1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="powerUpOne:" destination="PrD-BE-qlR" eventType="touchUpInside" id="xUc-A8-dq4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIc-Ea-QaT">
+                                <rect key="frame" x="534" y="542" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="2n8-Lc-94d"/>
+                                    <constraint firstAttribute="height" constant="50" id="Wv5-hp-aGO"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Power Up 4">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="powerUpFour:" destination="PrD-BE-qlR" eventType="touchUpInside" id="DfW-E3-Egl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WT-4e-JMt">
+                                <rect key="frame" x="187" y="542" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FhK-2L-OpU"/>
+                                    <constraint firstAttribute="width" constant="50" id="eSX-QW-4qt"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Power Up 2">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="powerUpTwo:" destination="PrD-BE-qlR" eventType="touchUpInside" id="o9x-Ry-eZJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOO-QS-NZa">
+                                <rect key="frame" x="366" y="542" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Q8q-jY-rLd"/>
+                                    <constraint firstAttribute="height" constant="50" id="qp4-3q-LXW"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Power Up 3">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="powerUpThree:" destination="PrD-BE-qlR" eventType="touchUpInside" id="Zi1-0n-uEt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kh8-Dz-xOl">
+                                <rect key="frame" x="269" y="20" width="62" height="40"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gu-9e-75f">
+                                <rect key="frame" x="231" y="182" width="138" height="40"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b0-jr-H5n">
+                                <rect key="frame" x="16" y="28" width="50" height="50"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="15"/>
+                                <state key="normal" title="i i" backgroundImage="Accessory Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pauseButton:" destination="PrD-BE-qlR" eventType="touchUpInside" id="4Vn-eW-OfA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r5B-3f-Znx">
+                                <rect key="frame" x="12" y="511" width="58" height="23"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Follow the instructions to fuel your battery!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uJi-7x-vkV">
+                                <rect key="frame" x="52" y="439" width="497" height="28"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Coins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfd-xQ-y4o">
+                                <rect key="frame" x="16" y="475" width="568" height="28"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wmx-ye-g5O">
+                                <rect key="frame" x="16" y="267" width="568" height="128"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="80"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="PNJ-4z-myf" firstAttribute="top" secondItem="eKc-Kj-a6i" secondAttribute="bottom" constant="8" id="0NG-Oq-cP0"/>
+                            <constraint firstItem="uOO-QS-NZa" firstAttribute="top" secondItem="DIt-Q9-r9O" secondAttribute="bottom" constant="8" id="16k-ce-CPR"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xjv-UB-YTv" secondAttribute="trailing" constant="5" id="1oW-4g-fB7"/>
+                            <constraint firstItem="vqc-KX-Ru3" firstAttribute="top" secondItem="pIc-Ea-QaT" secondAttribute="bottom" constant="8" id="2Ap-DO-e0N"/>
+                            <constraint firstItem="vqc-KX-Ru3" firstAttribute="top" secondItem="l12-iy-YnL" secondAttribute="bottom" id="5CG-v2-1G9"/>
+                            <constraint firstItem="uJi-7x-vkV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="d8c-ld-OJD" secondAttribute="leading" constant="20" id="7Oo-Zn-gna"/>
+                            <constraint firstAttribute="centerX" secondItem="eKc-Kj-a6i" secondAttribute="centerX" id="7Qo-56-kfi"/>
+                            <constraint firstItem="l12-iy-YnL" firstAttribute="top" secondItem="d8c-ld-OJD" secondAttribute="top" id="87s-W8-24i"/>
+                            <constraint firstItem="Wmx-ye-g5O" firstAttribute="centerY" secondItem="axk-4t-dJl" secondAttribute="centerY" id="8y4-Mv-LGf"/>
+                            <constraint firstItem="9Gu-9e-75f" firstAttribute="top" secondItem="PNJ-4z-myf" secondAttribute="bottom" constant="8" id="B2i-4k-zNF"/>
+                            <constraint firstItem="vqc-KX-Ru3" firstAttribute="top" secondItem="uOO-QS-NZa" secondAttribute="bottom" constant="8" id="B8W-2P-d7E"/>
+                            <constraint firstItem="DIt-Q9-r9O" firstAttribute="top" secondItem="axk-4t-dJl" secondAttribute="bottom" constant="16" id="BOn-kG-acR"/>
+                            <constraint firstAttribute="trailing" secondItem="GdN-C0-7A5" secondAttribute="trailing" constant="16" id="CkB-Na-hxD"/>
+                            <constraint firstItem="uOO-QS-NZa" firstAttribute="top" secondItem="axk-4t-dJl" secondAttribute="bottom" constant="8" id="Cwn-CW-YYM"/>
+                            <constraint firstItem="DIt-Q9-r9O" firstAttribute="top" secondItem="axk-4t-dJl" secondAttribute="bottom" constant="44" id="DGG-2P-fPt"/>
+                            <constraint firstItem="pIc-Ea-QaT" firstAttribute="top" secondItem="xjv-UB-YTv" secondAttribute="bottom" constant="8" id="Dss-bI-qqy"/>
+                            <constraint firstAttribute="centerX" secondItem="Kh8-Dz-xOl" secondAttribute="centerX" id="Fi6-7n-1bP"/>
+                            <constraint firstItem="axk-4t-dJl" firstAttribute="centerY" secondItem="Wmx-ye-g5O" secondAttribute="centerY" id="FjK-2x-trU"/>
+                            <constraint firstItem="GdN-C0-7A5" firstAttribute="leading" secondItem="d8c-ld-OJD" secondAttribute="leading" constant="16" id="GPc-jj-7ao"/>
+                            <constraint firstItem="GdN-C0-7A5" firstAttribute="top" secondItem="Kh8-Dz-xOl" secondAttribute="bottom" constant="24" id="GXM-qa-aUb"/>
+                            <constraint firstItem="axk-4t-dJl" firstAttribute="leading" secondItem="d8c-ld-OJD" secondAttribute="leading" constant="16" id="JEn-EL-JnF"/>
+                            <constraint firstItem="uOO-QS-NZa" firstAttribute="top" secondItem="Wmx-ye-g5O" secondAttribute="bottom" constant="146" id="JsR-gh-YDQ"/>
+                            <constraint firstItem="LQM-ng-B5Y" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="r5B-3f-Znx" secondAttribute="trailing" constant="5" id="KZB-ZW-xgc"/>
+                            <constraint firstItem="xjv-UB-YTv" firstAttribute="centerX" secondItem="pIc-Ea-QaT" secondAttribute="centerX" constant="0.5" id="Nlb-mI-9zq"/>
+                            <constraint firstItem="Gwm-z0-CqN" firstAttribute="top" secondItem="r5B-3f-Znx" secondAttribute="bottom" constant="8" id="OcP-zT-uHN"/>
+                            <constraint firstItem="4WT-4e-JMt" firstAttribute="centerX" secondItem="LQM-ng-B5Y" secondAttribute="centerX" constant="-0.5" id="Oof-qh-tsa"/>
+                            <constraint firstItem="eKc-Kj-a6i" firstAttribute="top" secondItem="GdN-C0-7A5" secondAttribute="bottom" constant="8" id="P9g-n4-VYC"/>
+                            <constraint firstItem="mfd-xQ-y4o" firstAttribute="top" secondItem="axk-4t-dJl" secondAttribute="bottom" constant="44" id="PST-Bu-qDt"/>
+                            <constraint firstItem="DIt-Q9-r9O" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LQM-ng-B5Y" secondAttribute="trailing" constant="5" id="Q11-XJ-ncf"/>
+                            <constraint firstAttribute="trailing" secondItem="Wmx-ye-g5O" secondAttribute="trailing" constant="16" id="QOX-tf-xhA"/>
+                            <constraint firstAttribute="trailing" secondItem="PNJ-4z-myf" secondAttribute="trailing" constant="16" id="TdM-dQ-BJ8"/>
+                            <constraint firstItem="GdN-C0-7A5" firstAttribute="top" secondItem="5f0-KN-puP" secondAttribute="bottom" constant="28" id="Tgd-97-0X8"/>
+                            <constraint firstItem="Gwm-z0-CqN" firstAttribute="leading" secondItem="d8c-ld-OJD" secondAttribute="leading" constant="16" id="VSL-Zh-puF"/>
+                            <constraint firstItem="r5B-3f-Znx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="d8c-ld-OJD" secondAttribute="leading" constant="5" id="VZQ-Bc-umt"/>
+                            <constraint firstItem="4WT-4e-JMt" firstAttribute="top" secondItem="LQM-ng-B5Y" secondAttribute="bottom" constant="8" id="W2t-EZ-GgV"/>
+                            <constraint firstItem="vqc-KX-Ru3" firstAttribute="top" secondItem="l12-iy-YnL" secondAttribute="bottom" id="WOL-d1-gmk"/>
+                            <constraint firstItem="DIt-Q9-r9O" firstAttribute="centerX" secondItem="uOO-QS-NZa" secondAttribute="centerX" constant="0.5" id="Xed-Ol-lHg"/>
+                            <constraint firstItem="xjv-UB-YTv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DIt-Q9-r9O" secondAttribute="trailing" constant="5" id="XwS-6M-oYB"/>
+                            <constraint firstItem="Wmx-ye-g5O" firstAttribute="top" secondItem="PNJ-4z-myf" secondAttribute="bottom" constant="146" id="YtI-lm-seT"/>
+                            <constraint firstItem="l12-iy-YnL" firstAttribute="leading" secondItem="d8c-ld-OJD" secondAttribute="leading" id="aDf-at-ywq"/>
+                            <constraint firstAttribute="trailing" secondItem="axk-4t-dJl" secondAttribute="trailing" constant="16" id="byp-u1-3Jx"/>
+                            <constraint firstItem="uJi-7x-vkV" firstAttribute="centerX" secondItem="l12-iy-YnL" secondAttribute="centerX" id="dia-ms-S5x"/>
+                            <constraint firstItem="4WT-4e-JMt" firstAttribute="leading" secondItem="Gwm-z0-CqN" secondAttribute="trailing" constant="121" id="eDA-LC-N36"/>
+                            <constraint firstAttribute="trailing" secondItem="l12-iy-YnL" secondAttribute="trailing" id="fDq-p2-Gbi"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uJi-7x-vkV" secondAttribute="trailing" constant="20" id="fxF-EY-5Hr"/>
+                            <constraint firstItem="vqc-KX-Ru3" firstAttribute="top" secondItem="Gwm-z0-CqN" secondAttribute="bottom" constant="8" id="hMW-dU-AEe"/>
+                            <constraint firstItem="Gwm-z0-CqN" firstAttribute="centerX" secondItem="r5B-3f-Znx" secondAttribute="centerX" id="i5p-Tv-D15"/>
+                            <constraint firstItem="Wmx-ye-g5O" firstAttribute="leading" secondItem="d8c-ld-OJD" secondAttribute="leading" constant="16" id="ivJ-sv-wnC"/>
+                            <constraint firstItem="PNJ-4z-myf" firstAttribute="leading" secondItem="d8c-ld-OJD" secondAttribute="leading" constant="16" id="ixG-FH-Fc8"/>
+                            <constraint firstItem="mfd-xQ-y4o" firstAttribute="leading" secondItem="d8c-ld-OJD" secondAttribute="leading" constant="16" id="j47-Dc-Qhv"/>
+                            <constraint firstItem="r5B-3f-Znx" firstAttribute="top" secondItem="mfd-xQ-y4o" secondAttribute="bottom" constant="8" id="jid-cu-beH"/>
+                            <constraint firstItem="4b0-jr-H5n" firstAttribute="leading" secondItem="d8c-ld-OJD" secondAttribute="leading" constant="16" id="kv2-2z-d5s"/>
+                            <constraint firstItem="uJi-7x-vkV" firstAttribute="top" secondItem="Wmx-ye-g5O" secondAttribute="bottom" constant="8" id="nZl-PR-QaS"/>
+                            <constraint firstAttribute="centerX" secondItem="9Gu-9e-75f" secondAttribute="centerX" id="oW8-PX-onX"/>
+                            <constraint firstItem="vqc-KX-Ru3" firstAttribute="top" secondItem="4WT-4e-JMt" secondAttribute="bottom" constant="8" id="qNW-7W-EEy"/>
+                            <constraint firstItem="Kh8-Dz-xOl" firstAttribute="top" secondItem="5f0-KN-puP" secondAttribute="bottom" id="qZL-qw-2zx"/>
+                            <constraint firstItem="4b0-jr-H5n" firstAttribute="top" secondItem="5f0-KN-puP" secondAttribute="bottom" constant="8" id="r7K-HK-74E"/>
+                            <constraint firstAttribute="trailing" secondItem="mfd-xQ-y4o" secondAttribute="trailing" constant="16" id="rBA-uI-Ean"/>
+                            <constraint firstItem="pIc-Ea-QaT" firstAttribute="leading" secondItem="uOO-QS-NZa" secondAttribute="trailing" constant="118" id="sfl-C5-Xiw"/>
+                            <constraint firstItem="mfd-xQ-y4o" firstAttribute="top" secondItem="uJi-7x-vkV" secondAttribute="bottom" constant="8" id="txM-HF-QwO"/>
+                            <constraint firstItem="DIt-Q9-r9O" firstAttribute="top" secondItem="uJi-7x-vkV" secondAttribute="bottom" constant="8" id="uwe-90-zaa"/>
+                            <constraint firstAttribute="trailing" secondItem="pIc-Ea-QaT" secondAttribute="trailing" constant="16" id="vdo-X9-5o8"/>
+                            <constraint firstItem="axk-4t-dJl" firstAttribute="top" secondItem="9Gu-9e-75f" secondAttribute="bottom" constant="8" id="wGK-yl-ugs"/>
+                            <constraint firstItem="mfd-xQ-y4o" firstAttribute="top" secondItem="Wmx-ye-g5O" secondAttribute="bottom" constant="62" id="wU1-ib-xcy"/>
+                            <constraint firstItem="uJi-7x-vkV" firstAttribute="top" secondItem="axk-4t-dJl" secondAttribute="bottom" constant="8" id="xGs-vY-40O"/>
+                            <constraint firstItem="axk-4t-dJl" firstAttribute="top" secondItem="PNJ-4z-myf" secondAttribute="bottom" constant="8" id="z9i-yl-Xfu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Tgd-97-0X8"/>
+                                <exclude reference="z9i-yl-Xfu"/>
+                                <exclude reference="8y4-Mv-LGf"/>
+                                <exclude reference="YtI-lm-seT"/>
+                                <exclude reference="nZl-PR-QaS"/>
+                                <exclude reference="xGs-vY-40O"/>
+                                <exclude reference="wU1-ib-xcy"/>
+                                <exclude reference="WOL-d1-gmk"/>
+                                <exclude reference="BOn-kG-acR"/>
+                                <exclude reference="DGG-2P-fPt"/>
+                                <exclude reference="uwe-90-zaa"/>
+                                <exclude reference="Cwn-CW-YYM"/>
+                                <exclude reference="JsR-gh-YDQ"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="b4Q-Ha-2ps" appends="YES" id="Pjl-U5-uuO"/>
+                            <outletCollection property="gestureRecognizers" destination="sIL-Ph-x7H" appends="YES" id="1b2-zo-Bdd"/>
+                            <outletCollection property="gestureRecognizers" destination="j1z-HQ-fGr" appends="YES" id="TZ3-Hj-tRE"/>
+                            <outletCollection property="gestureRecognizers" destination="IdP-Xo-1pk" appends="YES" id="c2N-ey-YvC"/>
+                            <outletCollection property="gestureRecognizers" destination="Te7-o5-wgE" appends="YES" id="SHP-aJ-vbd"/>
+                            <outletCollection property="gestureRecognizers" destination="jhG-0y-1GQ" appends="YES" id="XnT-qY-FuM"/>
+                            <outletCollection property="gestureRecognizers" destination="WcO-kM-uHm" appends="YES" id="ewh-ft-oYN"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="activityLabel" destination="uJi-7x-vkV" id="Gbt-jd-Vqg"/>
+                        <outlet property="barHeight" destination="xS2-jG-W0D" id="Lth-iR-bNt"/>
+                        <outlet property="clockLabel" destination="Kh8-Dz-xOl" id="eZO-bw-tvS"/>
+                        <outlet property="coinsLabel" destination="mfd-xQ-y4o" id="7rD-GK-obY"/>
+                        <outlet property="correctLabel" destination="9Gu-9e-75f" id="lbQ-Ge-t8s"/>
+                        <outlet property="instructionLabel" destination="Wmx-ye-g5O" id="y2J-cn-Ch4"/>
+                        <outlet property="leftHorizontalSpace" destination="eDA-LC-N36" id="pEf-Yn-qMv"/>
+                        <outlet property="longPressGesture" destination="IdP-Xo-1pk" id="S3X-yc-IlR"/>
+                        <outlet property="opponentLabel" destination="PNJ-4z-myf" id="Rqs-Sm-WbJ"/>
+                        <outlet property="pauseButton" destination="4b0-jr-H5n" id="GXa-14-0FS"/>
+                        <outlet property="pinchGesture" destination="sIL-Ph-x7H" id="Cly-2v-exI"/>
+                        <outlet property="powerUp1Label" destination="r5B-3f-Znx" id="8LI-6o-qaM"/>
+                        <outlet property="powerUp2Label" destination="LQM-ng-B5Y" id="ahO-Ex-TaB"/>
+                        <outlet property="powerUp3Label" destination="DIt-Q9-r9O" id="DyR-qw-KSf"/>
+                        <outlet property="powerUp4Label" destination="xjv-UB-YTv" id="tu5-3n-FCc"/>
+                        <outlet property="powerUpFour" destination="pIc-Ea-QaT" id="a85-Vb-jAX"/>
+                        <outlet property="powerUpOne" destination="Gwm-z0-CqN" id="xk8-bo-BAg"/>
+                        <outlet property="powerUpThree" destination="uOO-QS-NZa" id="i8r-KA-LUz"/>
+                        <outlet property="powerUpTwo" destination="4WT-4e-JMt" id="Nca-3q-Y1O"/>
+                        <outlet property="progressBar" destination="GdN-C0-7A5" id="U5y-J5-yu8"/>
+                        <outlet property="progressLabel" destination="eKc-Kj-a6i" id="GNd-aN-Ik9"/>
+                        <outlet property="rightHorizontalSpace" destination="sfl-C5-Xiw" id="qi9-1s-m9q"/>
+                        <outlet property="swipeDown" destination="jhG-0y-1GQ" id="ytF-Tg-vm7"/>
+                        <outlet property="swipeLeft" destination="WcO-kM-uHm" id="OF3-rq-LLj"/>
+                        <outlet property="swipeRight" destination="Te7-o5-wgE" id="Pio-0y-lPs"/>
+                        <outlet property="swipeUp" destination="j1z-HQ-fGr" id="NjF-hy-jg4"/>
+                        <outlet property="tapGesture" destination="b4Q-Ha-2ps" id="Kmn-rA-Iu7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g4c-ed-OF2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="b4Q-Ha-2ps">
+                    <connections>
+                        <action selector="tapGesture:" destination="PrD-BE-qlR" id="viL-ZW-fVk"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pinchGestureRecognizer id="sIL-Ph-x7H">
+                    <connections>
+                        <action selector="pinchGesture:" destination="PrD-BE-qlR" id="GQU-jv-wof"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="j1z-HQ-fGr">
+                    <connections>
+                        <action selector="swipeGesture:" destination="PrD-BE-qlR" id="l1y-kt-1k2"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="Te7-o5-wgE">
+                    <connections>
+                        <action selector="swipeGesture:" destination="PrD-BE-qlR" id="g9H-8W-sSy"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="jhG-0y-1GQ">
+                    <connections>
+                        <action selector="swipeGesture:" destination="PrD-BE-qlR" id="qai-Ou-gcT"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="WcO-kM-uHm">
+                    <connections>
+                        <action selector="swipeGesture:" destination="PrD-BE-qlR" id="c1G-9J-OtQ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="IdP-Xo-1pk">
+                    <connections>
+                        <action selector="longPressGesture:" destination="PrD-BE-qlR" id="UmS-u8-9TI"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1055" y="349"/>
+        </scene>
+        <!--Summary View Controller-->
+        <scene sceneID="Mkc-ji-wLt">
+            <objects>
+                <viewController storyboardIdentifier="Summary" id="7Gv-8h-WBa" customClass="SummaryViewController" customModule="Apollo_31" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cmq-Fb-ibV"/>
+                        <viewControllerLayoutGuide type="bottom" id="rAP-SL-3kO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yaf-a6-Xdx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Race Background_Plain" translatesAutoresizingMaskIntoConstraints="NO" id="Idq-GB-FK7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coins Earned:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbq-bl-A2x">
+                                <rect key="frame" x="16" y="388" width="165" height="32"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Summary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGp-kA-6Aj">
+                                <rect key="frame" x="194" y="28" width="212" height="40"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Mode:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYB-x8-FDT">
+                                <rect key="frame" x="16" y="76" width="137" height="32"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QqG-Yq-0EO">
+                                <rect key="frame" x="16" y="284" width="53" height="32"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X79-7O-I9K">
+                                <rect key="frame" x="16" y="128" width="110" height="32"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yng-CV-fKB">
+                                <rect key="frame" x="16" y="336" width="135" height="32"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="incorrect:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKO-GI-OVH">
+                                <rect key="frame" x="16" y="180" width="129" height="32"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Seg-6s-kni">
+                                <rect key="frame" x="0.0" y="520" width="600" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ccM-AC-AmV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
+                                <state key="normal" title="quit" backgroundImage="Race Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="quit:" destination="7Gv-8h-WBa" eventType="touchUpInside" id="toB-xk-Xkz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power ups used:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PN-c1-XMO">
+                                <rect key="frame" x="16" y="232" width="198" height="32"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHF-79-7EZ">
+                                <rect key="frame" x="16" y="440" width="99" height="32"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZYB-x8-FDT" firstAttribute="leading" secondItem="Yaf-a6-Xdx" secondAttribute="leading" constant="16" id="1sb-KL-FDc"/>
+                            <constraint firstItem="qbq-bl-A2x" firstAttribute="leading" secondItem="Yaf-a6-Xdx" secondAttribute="leading" constant="16" id="3Ny-XI-X90"/>
+                            <constraint firstItem="Seg-6s-kni" firstAttribute="leading" secondItem="Yaf-a6-Xdx" secondAttribute="leading" id="3n9-3X-ggm"/>
+                            <constraint firstItem="X79-7O-I9K" firstAttribute="top" secondItem="ZYB-x8-FDT" secondAttribute="bottom" constant="20" id="6nw-yf-eDd"/>
+                            <constraint firstAttribute="trailing" secondItem="Idq-GB-FK7" secondAttribute="trailing" id="9GN-3W-B86"/>
+                            <constraint firstItem="Yng-CV-fKB" firstAttribute="top" secondItem="QqG-Yq-0EO" secondAttribute="bottom" constant="20" id="B29-DF-ubk"/>
+                            <constraint firstItem="0PN-c1-XMO" firstAttribute="top" secondItem="ZKO-GI-OVH" secondAttribute="bottom" constant="20" id="C2z-W3-70L"/>
+                            <constraint firstItem="uHF-79-7EZ" firstAttribute="leading" secondItem="Yaf-a6-Xdx" secondAttribute="leading" constant="16" id="F6G-MR-zVz"/>
+                            <constraint firstItem="rAP-SL-3kO" firstAttribute="top" secondItem="Idq-GB-FK7" secondAttribute="bottom" id="GN9-ON-aXb"/>
+                            <constraint firstItem="uHF-79-7EZ" firstAttribute="top" secondItem="Yng-CV-fKB" secondAttribute="bottom" constant="20" id="HkX-IP-qHr"/>
+                            <constraint firstItem="ZKO-GI-OVH" firstAttribute="leading" secondItem="Yaf-a6-Xdx" secondAttribute="leading" constant="16" id="I3E-gH-EQo"/>
+                            <constraint firstItem="Yng-CV-fKB" firstAttribute="leading" secondItem="Yaf-a6-Xdx" secondAttribute="leading" constant="16" id="IOT-Tu-eyq"/>
+                            <constraint firstItem="Idq-GB-FK7" firstAttribute="leading" secondItem="Yaf-a6-Xdx" secondAttribute="leading" id="JH1-zP-ecs"/>
+                            <constraint firstItem="qbq-bl-A2x" firstAttribute="top" secondItem="Yng-CV-fKB" secondAttribute="bottom" constant="20" id="Mhz-Uz-2EX"/>
+                            <constraint firstItem="ZYB-x8-FDT" firstAttribute="top" secondItem="JGp-kA-6Aj" secondAttribute="bottom" constant="8" id="Oil-9f-l1T"/>
+                            <constraint firstItem="rAP-SL-3kO" firstAttribute="top" secondItem="Seg-6s-kni" secondAttribute="bottom" id="QmN-bh-SzZ"/>
+                            <constraint firstItem="ZKO-GI-OVH" firstAttribute="top" secondItem="X79-7O-I9K" secondAttribute="bottom" constant="20" id="RrZ-8U-Wgs"/>
+                            <constraint firstItem="0PN-c1-XMO" firstAttribute="leading" secondItem="Yaf-a6-Xdx" secondAttribute="leading" constant="16" id="VCg-1Y-ZW7"/>
+                            <constraint firstItem="QqG-Yq-0EO" firstAttribute="top" secondItem="0PN-c1-XMO" secondAttribute="bottom" constant="20" id="XR4-lO-cBZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Seg-6s-kni" secondAttribute="trailing" id="Xfe-e0-w3V"/>
+                            <constraint firstAttribute="centerX" secondItem="JGp-kA-6Aj" secondAttribute="centerX" id="aKT-Dk-gm0"/>
+                            <constraint firstItem="Idq-GB-FK7" firstAttribute="top" secondItem="Yaf-a6-Xdx" secondAttribute="top" id="azt-iR-nhX"/>
+                            <constraint firstItem="uHF-79-7EZ" firstAttribute="top" secondItem="qbq-bl-A2x" secondAttribute="bottom" constant="20" id="b4I-Qn-V1L"/>
+                            <constraint firstItem="JGp-kA-6Aj" firstAttribute="top" secondItem="cmq-Fb-ibV" secondAttribute="bottom" constant="8" id="iJN-Id-2y0"/>
+                            <constraint firstItem="X79-7O-I9K" firstAttribute="leading" secondItem="Yaf-a6-Xdx" secondAttribute="leading" constant="16" id="ieZ-7a-400"/>
+                            <constraint firstAttribute="centerX" secondItem="Seg-6s-kni" secondAttribute="centerX" id="v8Y-gh-HAt"/>
+                            <constraint firstItem="QqG-Yq-0EO" firstAttribute="leading" secondItem="Yaf-a6-Xdx" secondAttribute="leading" constant="16" id="x6l-9e-5mU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HkX-IP-qHr"/>
+                                <exclude reference="v8Y-gh-HAt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="coinsEarnedLabel" destination="qbq-bl-A2x" id="BQo-ye-PwE"/>
+                        <outlet property="gameModeLabel" destination="ZYB-x8-FDT" id="iax-Nw-vR6"/>
+                        <outlet property="highScoreLabel" destination="Yng-CV-fKB" id="Ryt-jC-K6j"/>
+                        <outlet property="numberCorrectLabel" destination="X79-7O-I9K" id="hbN-Wk-eTO"/>
+                        <outlet property="numberIncorrectLabel" destination="ZKO-GI-OVH" id="e1U-BW-NT9"/>
+                        <outlet property="powerUpsLabel" destination="0PN-c1-XMO" id="Lcz-Gz-H3H"/>
+                        <outlet property="recordLabel" destination="uHF-79-7EZ" id="FVf-QQ-4Nx"/>
+                        <outlet property="timeLabel" destination="QqG-Yq-0EO" id="f3B-qR-U5t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WOO-8p-0dh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672" y="349"/>
+        </scene>
+        <!--Extra Shop View Controller-->
+        <scene sceneID="mZf-ZL-Q7I">
+            <objects>
+                <viewController storyboardIdentifier="EVC" id="vWy-mK-97u" customClass="ExtraShopViewController" customModule="Apollo_31" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3tZ-xX-gBw"/>
+                        <viewControllerLayoutGuide type="bottom" id="REQ-lh-bdC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8ew-bw-euc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extras Shop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMt-Iq-NzL">
+                                <rect key="frame" x="208" y="28" width="184" height="40"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Record" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjI-pf-5Ug">
+                                <rect key="frame" x="16" y="217" width="133" height="26"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Losses and Draws" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEE-9Q-hJV">
+                                <rect key="frame" x="16" y="268" width="232" height="26"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove Ads" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4V-ps-uXl">
+                                <rect key="frame" x="16" y="319" width="114" height="26"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXv-oe-Ep3">
+                                <rect key="frame" x="16" y="76" width="568" height="74"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="34z-Zm-t1I"/>
+                                </constraints>
+                                <string key="text">Buy extras here to increase your advantage in Apollo 31. Don't miss out on these special extras if you want to top the leaderboards and leave your friends with a loss!</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="34z-Zm-t1I"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4a-Il-6oH">
+                                <rect key="frame" x="534" y="205" width="50" height="50"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="$0.99" backgroundImage="Accessory Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="vWy-mK-97u" eventType="touchUpInside" id="mQN-tN-Mcv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RmY-Sv-Bol">
+                                <rect key="frame" x="534" y="256" width="50" height="50"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="$1.99" backgroundImage="Accessory Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetLD:" destination="vWy-mK-97u" eventType="touchUpInside" id="BgF-YA-eGH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ac-32-CNU">
+                                <rect key="frame" x="534" y="307" width="50" height="50"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="$0.99" backgroundImage="Accessory Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeAds3:" destination="vWy-mK-97u" eventType="touchUpInside" id="Wj0-jS-Cg0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCk-qN-xCj">
+                                <rect key="frame" x="534" y="154" width="50" height="50"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <state key="normal" title="$19.99" backgroundImage="Accessory Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="unlimited:" destination="vWy-mK-97u" eventType="touchUpInside" id="ZTM-PN-1M9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove Penalty" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KK4-2h-fc8">
+                                <rect key="frame" x="16" y="370" width="158" height="26"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9a7-wv-ygL">
+                                <rect key="frame" x="534" y="358" width="50" height="50"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="$9.99" backgroundImage="Accessory Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="penalty:" destination="vWy-mK-97u" eventType="touchUpInside" id="DkJ-8b-wz9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="unlimited Power ups" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGx-oF-Oon">
+                                <rect key="frame" x="16" y="166" width="197" height="26"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="QMt-Iq-NzL" secondAttribute="centerX" id="4Gu-hY-thu"/>
+                            <constraint firstItem="wGx-oF-Oon" firstAttribute="leading" secondItem="8ew-bw-euc" secondAttribute="leading" constant="16" id="6XV-9z-0R6"/>
+                            <constraint firstItem="i4V-ps-uXl" firstAttribute="top" secondItem="yEE-9Q-hJV" secondAttribute="bottom" constant="25" id="6nv-VH-aKP"/>
+                            <constraint firstAttribute="trailing" secondItem="s4a-Il-6oH" secondAttribute="trailing" constant="16" id="81L-nH-0WR"/>
+                            <constraint firstAttribute="trailing" secondItem="2ac-32-CNU" secondAttribute="trailing" constant="16" id="AFi-1H-eei"/>
+                            <constraint firstItem="yEE-9Q-hJV" firstAttribute="top" secondItem="vjI-pf-5Ug" secondAttribute="bottom" constant="25" id="E77-ge-SrZ"/>
+                            <constraint firstItem="vjI-pf-5Ug" firstAttribute="centerY" secondItem="s4a-Il-6oH" secondAttribute="centerY" id="Ez6-gY-TCg"/>
+                            <constraint firstItem="wGx-oF-Oon" firstAttribute="top" secondItem="YXv-oe-Ep3" secondAttribute="bottom" constant="16" id="FFX-Ug-SKA"/>
+                            <constraint firstAttribute="trailing" secondItem="RmY-Sv-Bol" secondAttribute="trailing" constant="16" id="FeC-uh-xdh"/>
+                            <constraint firstItem="9a7-wv-ygL" firstAttribute="centerY" secondItem="KK4-2h-fc8" secondAttribute="centerY" id="Mej-kt-b2n"/>
+                            <constraint firstItem="YXv-oe-Ep3" firstAttribute="top" secondItem="QMt-Iq-NzL" secondAttribute="bottom" constant="8" id="Mgi-dQ-P36"/>
+                            <constraint firstItem="MCk-qN-xCj" firstAttribute="centerY" secondItem="wGx-oF-Oon" secondAttribute="centerY" id="Rgl-Tx-bbO"/>
+                            <constraint firstItem="vjI-pf-5Ug" firstAttribute="leading" secondItem="8ew-bw-euc" secondAttribute="leading" constant="16" id="bcP-pH-AgM"/>
+                            <constraint firstAttribute="trailing" secondItem="9a7-wv-ygL" secondAttribute="trailing" constant="16" id="fdv-34-eEX"/>
+                            <constraint firstItem="YXv-oe-Ep3" firstAttribute="leading" secondItem="8ew-bw-euc" secondAttribute="leading" constant="16" id="hY2-To-xDs"/>
+                            <constraint firstItem="vjI-pf-5Ug" firstAttribute="top" secondItem="wGx-oF-Oon" secondAttribute="bottom" constant="25" id="iDN-7K-3wP"/>
+                            <constraint firstItem="2ac-32-CNU" firstAttribute="centerY" secondItem="i4V-ps-uXl" secondAttribute="centerY" id="ipA-E3-hpQ"/>
+                            <constraint firstAttribute="trailing" secondItem="MCk-qN-xCj" secondAttribute="trailing" constant="16" id="kd0-ce-oDX"/>
+                            <constraint firstItem="KK4-2h-fc8" firstAttribute="top" secondItem="i4V-ps-uXl" secondAttribute="bottom" constant="25" id="kpb-uL-Unu"/>
+                            <constraint firstItem="QMt-Iq-NzL" firstAttribute="top" secondItem="3tZ-xX-gBw" secondAttribute="bottom" constant="8" id="kzB-cu-h71"/>
+                            <constraint firstAttribute="trailing" secondItem="YXv-oe-Ep3" secondAttribute="trailing" constant="16" id="pti-tU-Ngx"/>
+                            <constraint firstItem="KK4-2h-fc8" firstAttribute="leading" secondItem="8ew-bw-euc" secondAttribute="leading" constant="16" id="ro5-eR-qes"/>
+                            <constraint firstItem="yEE-9Q-hJV" firstAttribute="leading" secondItem="8ew-bw-euc" secondAttribute="leading" constant="16" id="su4-nj-VsP"/>
+                            <constraint firstItem="i4V-ps-uXl" firstAttribute="leading" secondItem="8ew-bw-euc" secondAttribute="leading" constant="16" id="w8J-nM-DTh"/>
+                            <constraint firstItem="yEE-9Q-hJV" firstAttribute="centerY" secondItem="RmY-Sv-Bol" secondAttribute="centerY" id="zdB-Od-DHB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="extrasDescription" destination="YXv-oe-Ep3" id="2iF-nt-ukL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lgm-Zj-jOi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055" y="1628"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="R5L-hl-NrD">
+            <objects>
+                <viewController storyboardIdentifier="TVC" id="pH2-6p-Ndp" customClass="TutorialViewController" customModule="Apollo_31" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C45-uy-Zxq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qla-U7-bMH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f0M-4A-7SS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Race Background_Plain" translatesAutoresizingMaskIntoConstraints="NO" id="5LG-F5-8wL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VkB-ey-KQc">
+                                <rect key="frame" x="0.0" y="260" width="600" height="80"/>
+                                <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="q3i-T4-0t9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
+                                <state key="normal" title="tutorial" backgroundImage="Race Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playGame:" destination="Acy-mj-aaN" eventType="touchUpInside" id="dvW-wh-Bzp"/>
+                                    <action selector="playTutorial:" destination="pH2-6p-Ndp" eventType="touchUpInside" id="dIu-5w-aZo"/>
+                                    <action selector="restore:" destination="0pI-fH-HDI" eventType="touchUpInside" id="d7r-aE-VGd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0z-X6-SqC">
+                                <rect key="frame" x="16" y="28" width="50" height="50"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
+                                <state key="normal" title="x" backgroundImage="Accessory Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss:" destination="pH2-6p-Ndp" eventType="touchUpInside" id="hVs-4w-pGR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAq-mB-lE7">
+                                <rect key="frame" x="454" y="432" width="130" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="Br2-yF-P7P"/>
+                                    <constraint firstAttribute="width" constant="130" id="Tiu-al-aLC"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="like_us_facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="like:" destination="pH2-6p-Ndp" eventType="touchUpInside" id="qCh-An-I4u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLh-1h-ASB">
+                                <rect key="frame" x="16" y="356" width="130" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="9rr-4H-7qM"/>
+                                    <constraint firstAttribute="height" constant="52" id="S8j-Ja-lvI"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="followbutton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="follow:" destination="pH2-6p-Ndp" eventType="touchUpInside" id="0sH-wG-0tg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJV-Nn-Rpn">
+                                <rect key="frame" x="16" y="432" width="130" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="4go-gM-SG8"/>
+                                    <constraint firstAttribute="height" constant="52" id="mqK-EG-ppI"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="tweetbutton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tweet:" destination="pH2-6p-Ndp" eventType="touchUpInside" id="rVR-6e-cRS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rV-bd-S5t">
+                                <rect key="frame" x="454" y="356" width="130" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="TgP-zW-lxD"/>
+                                    <constraint firstAttribute="height" constant="52" id="X4s-em-DG5"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="facebook_button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="share:" destination="pH2-6p-Ndp" eventType="touchUpInside" id="guU-SE-g2P"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Yp-Om-FsP">
+                                <rect key="frame" x="0.0" y="172" width="600" height="80"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="MDV-Bw-GDa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
+                                <state key="normal" title="Restore Purchases" backgroundImage="Race Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restorePurchases:" destination="pH2-6p-Ndp" eventType="touchUpInside" id="Ubk-56-LfQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NAq-mB-lE7" firstAttribute="centerX" secondItem="6rV-bd-S5t" secondAttribute="centerX" id="3jy-mi-maA"/>
+                            <constraint firstItem="VkB-ey-KQc" firstAttribute="leading" secondItem="f0M-4A-7SS" secondAttribute="leading" id="46R-Pm-CG9"/>
+                            <constraint firstItem="Qla-U7-bMH" firstAttribute="top" secondItem="5LG-F5-8wL" secondAttribute="bottom" id="9Y7-1G-QJd"/>
+                            <constraint firstAttribute="trailing" secondItem="6rV-bd-S5t" secondAttribute="trailing" constant="16" id="Axt-iG-Xjh"/>
+                            <constraint firstItem="5LG-F5-8wL" firstAttribute="leading" secondItem="f0M-4A-7SS" secondAttribute="leading" id="DK5-x7-M36"/>
+                            <constraint firstItem="5LG-F5-8wL" firstAttribute="centerX" secondItem="VkB-ey-KQc" secondAttribute="centerX" id="Df8-o6-uou"/>
+                            <constraint firstItem="FJV-Nn-Rpn" firstAttribute="top" secondItem="mLh-1h-ASB" secondAttribute="bottom" constant="24" id="Goh-E2-6RD"/>
+                            <constraint firstItem="5LG-F5-8wL" firstAttribute="centerY" secondItem="VkB-ey-KQc" secondAttribute="centerY" id="QBJ-zK-UE4"/>
+                            <constraint firstAttribute="trailing" secondItem="5LG-F5-8wL" secondAttribute="trailing" id="RJJ-ev-mR8"/>
+                            <constraint firstAttribute="trailing" secondItem="5Yp-Om-FsP" secondAttribute="trailing" id="SJO-Ss-BuA"/>
+                            <constraint firstItem="6rV-bd-S5t" firstAttribute="top" secondItem="VkB-ey-KQc" secondAttribute="bottom" constant="16" id="XYa-p9-3Yo"/>
+                            <constraint firstItem="c0z-X6-SqC" firstAttribute="leading" secondItem="f0M-4A-7SS" secondAttribute="leading" constant="16" id="Xjr-CN-8UX"/>
+                            <constraint firstItem="FJV-Nn-Rpn" firstAttribute="leading" secondItem="f0M-4A-7SS" secondAttribute="leading" constant="16" id="ZXT-lq-utV"/>
+                            <constraint firstItem="5LG-F5-8wL" firstAttribute="top" secondItem="f0M-4A-7SS" secondAttribute="top" id="eTq-Xc-UtT"/>
+                            <constraint firstItem="5LG-F5-8wL" firstAttribute="centerX" secondItem="6rV-bd-S5t" secondAttribute="centerX" id="gXR-o1-qdR"/>
+                            <constraint firstAttribute="trailing" secondItem="VkB-ey-KQc" secondAttribute="trailing" id="joR-Q4-04E"/>
+                            <constraint firstItem="mLh-1h-ASB" firstAttribute="leading" secondItem="f0M-4A-7SS" secondAttribute="leading" constant="16" id="kQC-Ku-emX"/>
+                            <constraint firstItem="c0z-X6-SqC" firstAttribute="top" secondItem="C45-uy-Zxq" secondAttribute="bottom" constant="8" id="n9D-7G-ae6"/>
+                            <constraint firstItem="5Yp-Om-FsP" firstAttribute="leading" secondItem="f0M-4A-7SS" secondAttribute="leading" id="nl6-yG-Fge"/>
+                            <constraint firstItem="mLh-1h-ASB" firstAttribute="top" secondItem="VkB-ey-KQc" secondAttribute="bottom" constant="16" id="rCo-4m-sYn"/>
+                            <constraint firstItem="NAq-mB-lE7" firstAttribute="top" secondItem="6rV-bd-S5t" secondAttribute="bottom" constant="24" id="veg-q8-qwN"/>
+                            <constraint firstItem="VkB-ey-KQc" firstAttribute="top" secondItem="5Yp-Om-FsP" secondAttribute="bottom" constant="8" id="zFm-KQ-oOi"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gXR-o1-qdR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="bg" destination="5LG-F5-8wL" id="aIj-0n-WYg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lKQ-2M-R9O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672" y="991"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Accessory Button" width="50" height="50"/>
+        <image name="Power Up 2" width="50" height="50"/>
+        <image name="Power Up 3" width="50" height="50"/>
+        <image name="Power Up 4" width="50" height="50"/>
+        <image name="Race Background" width="750" height="1334"/>
+        <image name="Race Background_Plain" width="750" height="1334"/>
+        <image name="Race Button" width="750" height="80"/>
+        <image name="facebook_button" width="122" height="42"/>
+        <image name="followbutton" width="222" height="82"/>
+        <image name="like_us_facebook" width="997" height="296"/>
+        <image name="powerUp1" width="50" height="50"/>
+        <image name="tweetbutton" width="212" height="82"/>
+    </resources>
+</document>
