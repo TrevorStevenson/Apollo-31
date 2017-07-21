@@ -12,7 +12,6 @@ import GameKit
 
 class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate {
 
-    
     //outlets
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var progressLabel: UILabel!
@@ -174,9 +173,7 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
             scaleAnimation.autoreverses = true
             self.countdownLabel.layer.add(scaleAnimation, forKey: nil)
             
-            
             self.countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameViewController.countdown), userInfo: nil, repeats: true)
-            
         }
         else if gameMode == "Online"
         {
@@ -482,8 +479,10 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
         
             do {
                 try currentMatch!.sendData(toAllPlayers: data as Data, with: GKMatchSendDataMode.unreliable)
-            } catch let error1 as NSError {
-                error = error1
+            }
+            catch
+            {
+                print("error")
             }
         }
         else if dataType == "Victory"
@@ -495,8 +494,10 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
             
             do {
                 try currentMatch!.sendData(toAllPlayers: data as Data, with: GKMatchSendDataMode.unreliable)
-            } catch let error1 as NSError {
-                error = error1
+            }
+            catch
+            {
+                print("error")
             }
         }
         else if dataType == "Power Up 1"
@@ -508,8 +509,10 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
             
             do {
                 try currentMatch!.sendData(toAllPlayers: data as Data, with: GKMatchSendDataMode.unreliable)
-            } catch let error1 as NSError {
-                error = error1
+            }
+            catch
+            {
+                print("error")
             }
 
         }
@@ -522,8 +525,10 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
             
             do {
                 try currentMatch!.sendData(toAllPlayers: data as Data, with: GKMatchSendDataMode.unreliable)
-            } catch let error1 as NSError {
-                error = error1
+            }
+            catch
+            {
+                print("error")
             }
             
         }
@@ -536,8 +541,10 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
             
             do {
                 try currentMatch!.sendData(toAllPlayers: data as Data, with: GKMatchSendDataMode.unreliable)
-            } catch let error1 as NSError {
-                error = error1
+            }
+            catch
+            {
+                print("error")
             }
             
         }
@@ -550,8 +557,10 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
             
             do {
                 try currentMatch!.sendData(toAllPlayers: data as Data, with: GKMatchSendDataMode.unreliable)
-            } catch let error1 as NSError {
-                error = error1
+            }
+            catch
+            {
+                print("error")
             }
         }
     
@@ -743,13 +752,7 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
             }
             
             clockLabel.text = "\(timerMinutes):" + secondsString + ":" + decimalString
-
-            
         }
-        
-      
-        
-        
     }
     
     func createInstruction() {
@@ -777,7 +780,6 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
             instructionLabel.text = "Tap"
             
         }
-        
     }
     
     func chooseSwipeDirection() {
@@ -1289,7 +1291,7 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
     {
         instructionLabel.textColor = UIColor.white
         
-        isGameReady == true
+        isGameReady = true
         self.view.isUserInteractionEnabled = true
         
         createInstruction()

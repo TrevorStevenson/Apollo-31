@@ -1,65 +1,24 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="frZ-9Q-HQU">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="frZ-9Q-HQU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="Starjedi.ttf">
+        <array key="Starjedi.ttf">
             <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-            <string>StarJedi</string>
-        </mutableArray>
+        </array>
     </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="zWa-wp-23E">
             <objects>
                 <navigationController id="frZ-9Q-HQU" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B6w-Mh-y0P">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="B6w-Mh-y0P">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -69,7 +28,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XK4-cr-GPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-163" y="349"/>
+            <point key="canvasLocation" x="-201" y="349"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -80,37 +39,37 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Race Background" translatesAutoresizingMaskIntoConstraints="NO" id="2K4-tt-a4t">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0-0-0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfd-x4-LYj">
                                 <rect key="frame" x="16" y="28" width="51" height="28"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1E-qp-0tE">
-                                <rect key="frame" x="534" y="542" width="50" height="50"/>
+                                <rect key="frame" x="309" y="609" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
                                 <state key="normal" title="?" backgroundImage="Accessory Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="help:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ejk-L1-dDM"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coins: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4E-Gt-KZU">
-                                <rect key="frame" x="505" y="28" width="79" height="28"/>
+                                <rect key="frame" x="280" y="28" width="79" height="28"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="mfd-x4-LYj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="6DV-y6-VYy"/>
                             <constraint firstItem="2K4-tt-a4t" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9RB-9Q-kd1"/>
@@ -149,31 +108,31 @@
                         <viewControllerLayoutGuide type="bottom" id="dDS-jU-8Rm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Upz-eH-AAS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Race Background_Plain" translatesAutoresizingMaskIntoConstraints="NO" id="m4w-Sz-bJV">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to see more" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80m-HB-B2s">
-                                <rect key="frame" x="218" y="541" width="164" height="24"/>
+                                <rect key="frame" x="105.5" y="608" width="164" height="24"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4u-WW-qQ6">
                                 <rect key="frame" x="16" y="28" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="12"/>
                                 <state key="normal" title="back" backgroundImage="Accessory Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="0pI-fH-HDI" eventType="touchUpInside" id="yBr-bL-RJd"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="W4u-WW-qQ6" firstAttribute="top" secondItem="qs1-g0-l4A" secondAttribute="bottom" constant="8" id="Efg-N1-2Sz"/>
                             <constraint firstItem="W4u-WW-qQ6" firstAttribute="leading" secondItem="Upz-eH-AAS" secondAttribute="leading" constant="16" id="GWU-BP-PT4"/>
@@ -207,47 +166,47 @@
                         <viewControllerLayoutGuide type="bottom" id="NiB-LE-xd0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="s6B-Eq-igz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coin Shop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfW-Je-GDJ">
-                                <rect key="frame" x="228" y="28" width="144" height="40"/>
+                                <rect key="frame" x="115.5" y="28" width="144" height="40"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,000,000 Coins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jS-G0-eIW">
-                                <rect key="frame" x="16" y="212" width="166" height="29"/>
+                                <rect key="frame" x="16" y="231" width="166" height="29"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10,000,000 Coins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGG-CV-aiS">
-                                <rect key="frame" x="16" y="266" width="180" height="29"/>
+                                <rect key="frame" x="16" y="285" width="180" height="29"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100,000 Coins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YU-r0-MQa">
-                                <rect key="frame" x="16" y="158" width="146" height="29"/>
+                                <rect key="frame" x="16" y="177" width="146" height="29"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100,000,000 Coins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTg-Ya-lHK">
-                                <rect key="frame" x="16" y="320" width="193" height="29"/>
+                                <rect key="frame" x="16" y="339" width="193" height="29"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNE-s6-BWd">
-                                <rect key="frame" x="16" y="76" width="568" height="74"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="16" y="76" width="343" height="93"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="115" id="9X2-Ph-DlN"/>
                                 </constraints>
                                 <string key="text">Buy coins to be able to use more power ups, humuliate your opponents in your online matches, and boost your score to the top of the leaderboards!</string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="default">
@@ -257,51 +216,51 @@
                                 </variation>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7WE-VU-0OQ">
-                                <rect key="frame" x="534" y="202" width="50" height="50"/>
+                                <rect key="frame" x="309" y="221" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="$1.99" backgroundImage="Accessory Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="mCoins:" destination="5UF-TH-3ok" eventType="touchUpInside" id="F3f-We-lpM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffN-JF-UA1">
-                                <rect key="frame" x="534" y="256" width="50" height="50"/>
+                                <rect key="frame" x="309" y="275" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="$4.99" backgroundImage="Accessory Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="tmCoins:" destination="5UF-TH-3ok" eventType="touchUpInside" id="dq8-VU-9qo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSb-S3-ttu">
-                                <rect key="frame" x="534" y="310" width="50" height="50"/>
+                                <rect key="frame" x="309" y="329" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="$9.99" backgroundImage="Accessory Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="hmCoins:" destination="5UF-TH-3ok" eventType="touchUpInside" id="pB6-j5-5PB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDT-zT-qN4">
-                                <rect key="frame" x="534" y="148" width="50" height="50"/>
+                                <rect key="frame" x="309" y="167" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="$0.99" backgroundImage="Accessory Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="htCoins:" destination="5UF-TH-3ok" eventType="touchUpInside" id="bov-Mb-J9B"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="NTg-Ya-lHK" firstAttribute="leading" secondItem="s6B-Eq-igz" secondAttribute="leading" constant="16" id="1WK-Ty-1uZ"/>
                             <constraint firstItem="NTg-Ya-lHK" firstAttribute="top" secondItem="oGG-CV-aiS" secondAttribute="bottom" constant="25" id="4F9-zP-VpF"/>
@@ -343,22 +302,22 @@
                         <viewControllerLayoutGuide type="bottom" id="VpI-3O-czb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RC0-A3-ycy">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Race Background" translatesAutoresizingMaskIntoConstraints="NO" id="kat-sy-htu">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfd-aR-Tyw">
-                                <rect key="frame" x="0.0" y="264" width="600" height="80"/>
-                                <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="297.5" width="375" height="80"/>
+                                <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Sb5-19-P2c"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
                                 <state key="normal" title="Time Trials" backgroundImage="Race Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="playGame:" destination="Acy-mj-aaN" eventType="touchUpInside" id="RkF-cS-mqX"/>
@@ -368,33 +327,33 @@
                                 <rect key="frame" x="16" y="28" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="12"/>
                                 <state key="normal" title="back" backgroundImage="Accessory Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="Acy-mj-aaN" eventType="touchUpInside" id="RT4-1M-yjm"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRB-2R-D6V">
-                                <rect key="frame" x="0.0" y="176" width="600" height="80"/>
-                                <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="209.5" width="375" height="80"/>
+                                <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="ZIr-5m-Tc1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
                                 <state key="normal" title="online" backgroundImage="Race Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="playGame:" destination="Acy-mj-aaN" eventType="touchUpInside" id="br3-ZK-jh5"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="cfd-aR-Tyw" secondAttribute="trailing" id="74u-aR-t9T"/>
                             <constraint firstItem="gRB-2R-D6V" firstAttribute="leading" secondItem="RC0-A3-ycy" secondAttribute="leading" id="7gc-Il-qfC"/>
@@ -424,7 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oDk-60-vbz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-163" y="991"/>
+            <point key="canvasLocation" x="-202" y="1097"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="UVH-G7-DoG">
@@ -435,158 +394,158 @@
                         <viewControllerLayoutGuide type="bottom" id="vqc-KX-Ru3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="d8c-ld-OJD">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Race Background_Plain" translatesAutoresizingMaskIntoConstraints="NO" id="l12-iy-YnL">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DIt-Q9-r9O">
-                                <rect key="frame" x="363" y="511" width="58" height="23"/>
+                                <rect key="frame" x="235" y="578" width="58" height="23"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xjv-UB-YTv">
-                                <rect key="frame" x="531" y="511" width="58" height="23"/>
+                                <rect key="frame" x="305" y="578" width="58" height="23"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQM-ng-B5Y">
-                                <rect key="frame" x="184" y="511" width="58" height="23"/>
+                                <rect key="frame" x="82" y="578" width="58" height="23"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GdN-C0-7A5">
-                                <rect key="frame" x="16" y="84" width="568" height="3"/>
+                                <rect key="frame" x="16" y="84" width="343" height="2.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="xS2-jG-W0D"/>
                                 </constraints>
-                                <color key="progressTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="progressTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35/100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKc-Kj-a6i">
-                                <rect key="frame" x="264" y="94" width="72" height="32"/>
+                                <rect key="frame" x="151.5" y="94" width="72" height="32"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="opponent: 26/100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PNJ-4z-myf">
-                                <rect key="frame" x="16" y="134" width="568" height="40"/>
+                                <rect key="frame" x="16" y="134" width="343" height="40"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="axk-4t-dJl">
-                                <rect key="frame" x="16" y="230" width="568" height="201"/>
+                                <rect key="frame" x="16" y="230" width="343" height="268"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwm-z0-CqN">
-                                <rect key="frame" x="16" y="542" width="50" height="50"/>
+                                <rect key="frame" x="16" y="609" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="hwp-xD-qXl"/>
                                     <constraint firstAttribute="height" constant="50" id="z0U-lv-nx7"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="powerUp1">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="powerUpOne:" destination="PrD-BE-qlR" eventType="touchUpInside" id="xUc-A8-dq4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIc-Ea-QaT">
-                                <rect key="frame" x="534" y="542" width="50" height="50"/>
+                                <rect key="frame" x="309" y="609" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="2n8-Lc-94d"/>
                                     <constraint firstAttribute="height" constant="50" id="Wv5-hp-aGO"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="Power Up 4">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="powerUpFour:" destination="PrD-BE-qlR" eventType="touchUpInside" id="DfW-E3-Egl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WT-4e-JMt">
-                                <rect key="frame" x="187" y="542" width="50" height="50"/>
+                                <rect key="frame" x="86" y="609" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="FhK-2L-OpU"/>
                                     <constraint firstAttribute="width" constant="50" id="eSX-QW-4qt"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="Power Up 2">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="powerUpTwo:" destination="PrD-BE-qlR" eventType="touchUpInside" id="o9x-Ry-eZJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOO-QS-NZa">
-                                <rect key="frame" x="366" y="542" width="50" height="50"/>
+                                <rect key="frame" x="239" y="609" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Q8q-jY-rLd"/>
                                     <constraint firstAttribute="height" constant="50" id="qp4-3q-LXW"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="Power Up 3">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="powerUpThree:" destination="PrD-BE-qlR" eventType="touchUpInside" id="Zi1-0n-uEt"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kh8-Dz-xOl">
-                                <rect key="frame" x="269" y="20" width="62" height="40"/>
+                                <rect key="frame" x="156.5" y="20" width="62" height="40"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gu-9e-75f">
-                                <rect key="frame" x="231" y="182" width="138" height="40"/>
+                                <rect key="frame" x="118.5" y="182" width="138" height="40"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b0-jr-H5n">
                                 <rect key="frame" x="16" y="28" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="15"/>
                                 <state key="normal" title="i i" backgroundImage="Accessory Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="pauseButton:" destination="PrD-BE-qlR" eventType="touchUpInside" id="4Vn-eW-OfA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r5B-3f-Znx">
-                                <rect key="frame" x="12" y="511" width="58" height="23"/>
+                                <rect key="frame" x="12" y="578" width="58" height="23"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Follow the instructions to fuel your battery!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uJi-7x-vkV">
-                                <rect key="frame" x="52" y="439" width="497" height="28"/>
+                                <rect key="frame" x="21" y="506" width="334" height="28"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Coins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfd-xQ-y4o">
-                                <rect key="frame" x="16" y="475" width="568" height="28"/>
+                                <rect key="frame" x="16" y="542" width="343" height="28"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wmx-ye-g5O">
-                                <rect key="frame" x="16" y="267" width="568" height="128"/>
+                                <rect key="frame" x="16" y="300.5" width="343" height="128"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="80"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="PNJ-4z-myf" firstAttribute="top" secondItem="eKc-Kj-a6i" secondAttribute="bottom" constant="8" id="0NG-Oq-cP0"/>
@@ -612,9 +571,9 @@
                             <constraint firstItem="axk-4t-dJl" firstAttribute="leading" secondItem="d8c-ld-OJD" secondAttribute="leading" constant="16" id="JEn-EL-JnF"/>
                             <constraint firstItem="uOO-QS-NZa" firstAttribute="top" secondItem="Wmx-ye-g5O" secondAttribute="bottom" constant="146" id="JsR-gh-YDQ"/>
                             <constraint firstItem="LQM-ng-B5Y" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="r5B-3f-Znx" secondAttribute="trailing" constant="5" id="KZB-ZW-xgc"/>
-                            <constraint firstItem="xjv-UB-YTv" firstAttribute="centerX" secondItem="pIc-Ea-QaT" secondAttribute="centerX" constant="0.5" id="Nlb-mI-9zq"/>
+                            <constraint firstItem="xjv-UB-YTv" firstAttribute="centerX" secondItem="pIc-Ea-QaT" secondAttribute="centerX" id="Nlb-mI-9zq"/>
                             <constraint firstItem="Gwm-z0-CqN" firstAttribute="top" secondItem="r5B-3f-Znx" secondAttribute="bottom" constant="8" id="OcP-zT-uHN"/>
-                            <constraint firstItem="4WT-4e-JMt" firstAttribute="centerX" secondItem="LQM-ng-B5Y" secondAttribute="centerX" constant="-0.5" id="Oof-qh-tsa"/>
+                            <constraint firstItem="4WT-4e-JMt" firstAttribute="centerX" secondItem="LQM-ng-B5Y" secondAttribute="centerX" id="Oof-qh-tsa"/>
                             <constraint firstItem="eKc-Kj-a6i" firstAttribute="top" secondItem="GdN-C0-7A5" secondAttribute="bottom" constant="8" id="P9g-n4-VYC"/>
                             <constraint firstItem="mfd-xQ-y4o" firstAttribute="top" secondItem="axk-4t-dJl" secondAttribute="bottom" constant="44" id="PST-Bu-qDt"/>
                             <constraint firstItem="DIt-Q9-r9O" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LQM-ng-B5Y" secondAttribute="trailing" constant="5" id="Q11-XJ-ncf"/>
@@ -625,13 +584,13 @@
                             <constraint firstItem="r5B-3f-Znx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="d8c-ld-OJD" secondAttribute="leading" constant="5" id="VZQ-Bc-umt"/>
                             <constraint firstItem="4WT-4e-JMt" firstAttribute="top" secondItem="LQM-ng-B5Y" secondAttribute="bottom" constant="8" id="W2t-EZ-GgV"/>
                             <constraint firstItem="vqc-KX-Ru3" firstAttribute="top" secondItem="l12-iy-YnL" secondAttribute="bottom" id="WOL-d1-gmk"/>
-                            <constraint firstItem="DIt-Q9-r9O" firstAttribute="centerX" secondItem="uOO-QS-NZa" secondAttribute="centerX" constant="0.5" id="Xed-Ol-lHg"/>
+                            <constraint firstItem="DIt-Q9-r9O" firstAttribute="centerX" secondItem="uOO-QS-NZa" secondAttribute="centerX" id="Xed-Ol-lHg"/>
                             <constraint firstItem="xjv-UB-YTv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DIt-Q9-r9O" secondAttribute="trailing" constant="5" id="XwS-6M-oYB"/>
                             <constraint firstItem="Wmx-ye-g5O" firstAttribute="top" secondItem="PNJ-4z-myf" secondAttribute="bottom" constant="146" id="YtI-lm-seT"/>
                             <constraint firstItem="l12-iy-YnL" firstAttribute="leading" secondItem="d8c-ld-OJD" secondAttribute="leading" id="aDf-at-ywq"/>
                             <constraint firstAttribute="trailing" secondItem="axk-4t-dJl" secondAttribute="trailing" constant="16" id="byp-u1-3Jx"/>
                             <constraint firstItem="uJi-7x-vkV" firstAttribute="centerX" secondItem="l12-iy-YnL" secondAttribute="centerX" id="dia-ms-S5x"/>
-                            <constraint firstItem="4WT-4e-JMt" firstAttribute="leading" secondItem="Gwm-z0-CqN" secondAttribute="trailing" constant="121" id="eDA-LC-N36"/>
+                            <constraint firstItem="4WT-4e-JMt" firstAttribute="leading" secondItem="Gwm-z0-CqN" secondAttribute="trailing" constant="20" id="eDA-LC-N36"/>
                             <constraint firstAttribute="trailing" secondItem="l12-iy-YnL" secondAttribute="trailing" id="fDq-p2-Gbi"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uJi-7x-vkV" secondAttribute="trailing" constant="20" id="fxF-EY-5Hr"/>
                             <constraint firstItem="vqc-KX-Ru3" firstAttribute="top" secondItem="Gwm-z0-CqN" secondAttribute="bottom" constant="8" id="hMW-dU-AEe"/>
@@ -647,7 +606,7 @@
                             <constraint firstItem="Kh8-Dz-xOl" firstAttribute="top" secondItem="5f0-KN-puP" secondAttribute="bottom" id="qZL-qw-2zx"/>
                             <constraint firstItem="4b0-jr-H5n" firstAttribute="top" secondItem="5f0-KN-puP" secondAttribute="bottom" constant="8" id="r7K-HK-74E"/>
                             <constraint firstAttribute="trailing" secondItem="mfd-xQ-y4o" secondAttribute="trailing" constant="16" id="rBA-uI-Ean"/>
-                            <constraint firstItem="pIc-Ea-QaT" firstAttribute="leading" secondItem="uOO-QS-NZa" secondAttribute="trailing" constant="118" id="sfl-C5-Xiw"/>
+                            <constraint firstItem="pIc-Ea-QaT" firstAttribute="leading" secondItem="uOO-QS-NZa" secondAttribute="trailing" constant="20" id="sfl-C5-Xiw"/>
                             <constraint firstItem="mfd-xQ-y4o" firstAttribute="top" secondItem="uJi-7x-vkV" secondAttribute="bottom" constant="8" id="txM-HF-QwO"/>
                             <constraint firstItem="DIt-Q9-r9O" firstAttribute="top" secondItem="uJi-7x-vkV" secondAttribute="bottom" constant="8" id="uwe-90-zaa"/>
                             <constraint firstAttribute="trailing" secondItem="pIc-Ea-QaT" secondAttribute="trailing" constant="16" id="vdo-X9-5o8"/>
@@ -761,63 +720,63 @@
                         <viewControllerLayoutGuide type="bottom" id="rAP-SL-3kO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Yaf-a6-Xdx">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Race Background_Plain" translatesAutoresizingMaskIntoConstraints="NO" id="Idq-GB-FK7">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coins Earned:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbq-bl-A2x">
                                 <rect key="frame" x="16" y="388" width="165" height="32"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Summary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGp-kA-6Aj">
-                                <rect key="frame" x="194" y="28" width="212" height="40"/>
+                                <rect key="frame" x="81.5" y="28" width="212" height="40"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Mode:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYB-x8-FDT">
                                 <rect key="frame" x="16" y="76" width="137" height="32"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QqG-Yq-0EO">
                                 <rect key="frame" x="16" y="284" width="53" height="32"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X79-7O-I9K">
                                 <rect key="frame" x="16" y="128" width="110" height="32"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yng-CV-fKB">
                                 <rect key="frame" x="16" y="336" width="135" height="32"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="incorrect:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKO-GI-OVH">
                                 <rect key="frame" x="16" y="180" width="129" height="32"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Seg-6s-kni">
-                                <rect key="frame" x="0.0" y="520" width="600" height="80"/>
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="ccM-AC-AmV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
                                 <state key="normal" title="quit" backgroundImage="Race Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="quit:" destination="7Gv-8h-WBa" eventType="touchUpInside" id="toB-xk-Xkz"/>
@@ -826,17 +785,17 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power ups used:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PN-c1-XMO">
                                 <rect key="frame" x="16" y="232" width="198" height="32"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHF-79-7EZ">
                                 <rect key="frame" x="16" y="440" width="99" height="32"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZYB-x8-FDT" firstAttribute="leading" secondItem="Yaf-a6-Xdx" secondAttribute="leading" constant="16" id="1sb-KL-FDc"/>
                             <constraint firstItem="qbq-bl-A2x" firstAttribute="leading" secondItem="Yaf-a6-Xdx" secondAttribute="leading" constant="16" id="3Ny-XI-X90"/>
@@ -897,41 +856,41 @@
                         <viewControllerLayoutGuide type="bottom" id="REQ-lh-bdC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8ew-bw-euc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extras Shop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMt-Iq-NzL">
-                                <rect key="frame" x="208" y="28" width="184" height="40"/>
+                                <rect key="frame" x="95.5" y="28" width="184" height="40"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Record" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjI-pf-5Ug">
-                                <rect key="frame" x="16" y="217" width="133" height="26"/>
+                                <rect key="frame" x="16" y="255" width="133" height="26"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Losses and Draws" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEE-9Q-hJV">
-                                <rect key="frame" x="16" y="268" width="232" height="26"/>
+                                <rect key="frame" x="16" y="306" width="232" height="26"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove Ads" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4V-ps-uXl">
-                                <rect key="frame" x="16" y="319" width="114" height="26"/>
+                                <rect key="frame" x="16" y="357" width="114" height="26"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXv-oe-Ep3">
-                                <rect key="frame" x="16" y="76" width="568" height="74"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="16" y="76" width="343" height="112"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="115" id="34z-Zm-t1I"/>
                                 </constraints>
                                 <string key="text">Buy extras here to increase your advantage in Apollo 31. Don't miss out on these special extras if you want to top the leaderboards and leave your friends with a loss!</string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="default">
@@ -941,74 +900,74 @@
                                 </variation>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4a-Il-6oH">
-                                <rect key="frame" x="534" y="205" width="50" height="50"/>
+                                <rect key="frame" x="309" y="243" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="$0.99" backgroundImage="Accessory Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="vWy-mK-97u" eventType="touchUpInside" id="mQN-tN-Mcv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RmY-Sv-Bol">
-                                <rect key="frame" x="534" y="256" width="50" height="50"/>
+                                <rect key="frame" x="309" y="294" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="$1.99" backgroundImage="Accessory Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="resetLD:" destination="vWy-mK-97u" eventType="touchUpInside" id="BgF-YA-eGH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ac-32-CNU">
-                                <rect key="frame" x="534" y="307" width="50" height="50"/>
+                                <rect key="frame" x="309" y="345" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="$0.99" backgroundImage="Accessory Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="removeAds3:" destination="vWy-mK-97u" eventType="touchUpInside" id="Wj0-jS-Cg0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCk-qN-xCj">
-                                <rect key="frame" x="534" y="154" width="50" height="50"/>
+                                <rect key="frame" x="309" y="192" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <state key="normal" title="$19.99" backgroundImage="Accessory Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="unlimited:" destination="vWy-mK-97u" eventType="touchUpInside" id="ZTM-PN-1M9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove Penalty" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KK4-2h-fc8">
-                                <rect key="frame" x="16" y="370" width="158" height="26"/>
+                                <rect key="frame" x="16" y="408" width="158" height="26"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9a7-wv-ygL">
-                                <rect key="frame" x="534" y="358" width="50" height="50"/>
+                                <rect key="frame" x="309" y="396" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="$9.99" backgroundImage="Accessory Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="penalty:" destination="vWy-mK-97u" eventType="touchUpInside" id="DkJ-8b-wz9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="unlimited Power ups" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGx-oF-Oon">
-                                <rect key="frame" x="16" y="166" width="197" height="26"/>
+                                <rect key="frame" x="16" y="204" width="197" height="26"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="QMt-Iq-NzL" secondAttribute="centerX" id="4Gu-hY-thu"/>
                             <constraint firstItem="wGx-oF-Oon" firstAttribute="leading" secondItem="8ew-bw-euc" secondAttribute="leading" constant="16" id="6XV-9z-0R6"/>
@@ -1054,25 +1013,25 @@
                         <viewControllerLayoutGuide type="bottom" id="Qla-U7-bMH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="f0M-4A-7SS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Race Background_Plain" translatesAutoresizingMaskIntoConstraints="NO" id="5LG-F5-8wL">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VkB-ey-KQc">
-                                <rect key="frame" x="0.0" y="260" width="600" height="80"/>
-                                <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="293.5" width="375" height="80"/>
+                                <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="q3i-T4-0t9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
                                 <state key="normal" title="tutorial" backgroundImage="Race Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="playGame:" destination="Acy-mj-aaN" eventType="touchUpInside" id="dvW-wh-Bzp"/>
@@ -1084,114 +1043,48 @@
                                 <rect key="frame" x="16" y="28" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
                                 <state key="normal" title="x" backgroundImage="Accessory Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="dismiss:" destination="pH2-6p-Ndp" eventType="touchUpInside" id="hVs-4w-pGR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAq-mB-lE7">
-                                <rect key="frame" x="454" y="432" width="130" height="52"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="Br2-yF-P7P"/>
-                                    <constraint firstAttribute="width" constant="130" id="Tiu-al-aLC"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="like_us_facebook">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="like:" destination="pH2-6p-Ndp" eventType="touchUpInside" id="qCh-An-I4u"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLh-1h-ASB">
-                                <rect key="frame" x="16" y="356" width="130" height="52"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="9rr-4H-7qM"/>
-                                    <constraint firstAttribute="height" constant="52" id="S8j-Ja-lvI"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="followbutton">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="follow:" destination="pH2-6p-Ndp" eventType="touchUpInside" id="0sH-wG-0tg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJV-Nn-Rpn">
-                                <rect key="frame" x="16" y="432" width="130" height="52"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="4go-gM-SG8"/>
-                                    <constraint firstAttribute="height" constant="52" id="mqK-EG-ppI"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="tweetbutton">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="tweet:" destination="pH2-6p-Ndp" eventType="touchUpInside" id="rVR-6e-cRS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rV-bd-S5t">
-                                <rect key="frame" x="454" y="356" width="130" height="52"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="TgP-zW-lxD"/>
-                                    <constraint firstAttribute="height" constant="52" id="X4s-em-DG5"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="facebook_button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="share:" destination="pH2-6p-Ndp" eventType="touchUpInside" id="guU-SE-g2P"/>
-                                </connections>
-                            </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Yp-Om-FsP">
-                                <rect key="frame" x="0.0" y="172" width="600" height="80"/>
-                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <button hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Yp-Om-FsP">
+                                <rect key="frame" x="0.0" y="205.5" width="375" height="80"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="MDV-Bw-GDa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="25"/>
                                 <state key="normal" title="Restore Purchases" backgroundImage="Race Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="restorePurchases:" destination="pH2-6p-Ndp" eventType="touchUpInside" id="Ubk-56-LfQ"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NAq-mB-lE7" firstAttribute="centerX" secondItem="6rV-bd-S5t" secondAttribute="centerX" id="3jy-mi-maA"/>
                             <constraint firstItem="VkB-ey-KQc" firstAttribute="leading" secondItem="f0M-4A-7SS" secondAttribute="leading" id="46R-Pm-CG9"/>
                             <constraint firstItem="Qla-U7-bMH" firstAttribute="top" secondItem="5LG-F5-8wL" secondAttribute="bottom" id="9Y7-1G-QJd"/>
-                            <constraint firstAttribute="trailing" secondItem="6rV-bd-S5t" secondAttribute="trailing" constant="16" id="Axt-iG-Xjh"/>
                             <constraint firstItem="5LG-F5-8wL" firstAttribute="leading" secondItem="f0M-4A-7SS" secondAttribute="leading" id="DK5-x7-M36"/>
                             <constraint firstItem="5LG-F5-8wL" firstAttribute="centerX" secondItem="VkB-ey-KQc" secondAttribute="centerX" id="Df8-o6-uou"/>
-                            <constraint firstItem="FJV-Nn-Rpn" firstAttribute="top" secondItem="mLh-1h-ASB" secondAttribute="bottom" constant="24" id="Goh-E2-6RD"/>
                             <constraint firstItem="5LG-F5-8wL" firstAttribute="centerY" secondItem="VkB-ey-KQc" secondAttribute="centerY" id="QBJ-zK-UE4"/>
                             <constraint firstAttribute="trailing" secondItem="5LG-F5-8wL" secondAttribute="trailing" id="RJJ-ev-mR8"/>
                             <constraint firstAttribute="trailing" secondItem="5Yp-Om-FsP" secondAttribute="trailing" id="SJO-Ss-BuA"/>
-                            <constraint firstItem="6rV-bd-S5t" firstAttribute="top" secondItem="VkB-ey-KQc" secondAttribute="bottom" constant="16" id="XYa-p9-3Yo"/>
                             <constraint firstItem="c0z-X6-SqC" firstAttribute="leading" secondItem="f0M-4A-7SS" secondAttribute="leading" constant="16" id="Xjr-CN-8UX"/>
-                            <constraint firstItem="FJV-Nn-Rpn" firstAttribute="leading" secondItem="f0M-4A-7SS" secondAttribute="leading" constant="16" id="ZXT-lq-utV"/>
                             <constraint firstItem="5LG-F5-8wL" firstAttribute="top" secondItem="f0M-4A-7SS" secondAttribute="top" id="eTq-Xc-UtT"/>
-                            <constraint firstItem="5LG-F5-8wL" firstAttribute="centerX" secondItem="6rV-bd-S5t" secondAttribute="centerX" id="gXR-o1-qdR"/>
                             <constraint firstAttribute="trailing" secondItem="VkB-ey-KQc" secondAttribute="trailing" id="joR-Q4-04E"/>
-                            <constraint firstItem="mLh-1h-ASB" firstAttribute="leading" secondItem="f0M-4A-7SS" secondAttribute="leading" constant="16" id="kQC-Ku-emX"/>
                             <constraint firstItem="c0z-X6-SqC" firstAttribute="top" secondItem="C45-uy-Zxq" secondAttribute="bottom" constant="8" id="n9D-7G-ae6"/>
                             <constraint firstItem="5Yp-Om-FsP" firstAttribute="leading" secondItem="f0M-4A-7SS" secondAttribute="leading" id="nl6-yG-Fge"/>
-                            <constraint firstItem="mLh-1h-ASB" firstAttribute="top" secondItem="VkB-ey-KQc" secondAttribute="bottom" constant="16" id="rCo-4m-sYn"/>
-                            <constraint firstItem="NAq-mB-lE7" firstAttribute="top" secondItem="6rV-bd-S5t" secondAttribute="bottom" constant="24" id="veg-q8-qwN"/>
                             <constraint firstItem="VkB-ey-KQc" firstAttribute="top" secondItem="5Yp-Om-FsP" secondAttribute="bottom" constant="8" id="zFm-KQ-oOi"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="gXR-o1-qdR"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="bg" destination="5LG-F5-8wL" id="aIj-0n-WYg"/>
@@ -1210,10 +1103,6 @@
         <image name="Race Background" width="750" height="1334"/>
         <image name="Race Background_Plain" width="750" height="1334"/>
         <image name="Race Button" width="750" height="80"/>
-        <image name="facebook_button" width="122" height="42"/>
-        <image name="followbutton" width="222" height="82"/>
-        <image name="like_us_facebook" width="997" height="296"/>
         <image name="powerUp1" width="50" height="50"/>
-        <image name="tweetbutton" width="212" height="82"/>
     </resources>
 </document>

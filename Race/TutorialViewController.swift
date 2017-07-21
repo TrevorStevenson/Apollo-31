@@ -10,7 +10,6 @@ import UIKit
 import Social
 import MediaPlayer
 import GameKit
-import Parse
 
 class TutorialViewController: UIViewController {
     
@@ -231,7 +230,7 @@ class TutorialViewController: UIViewController {
             UIDevice.current.setValue(value, forKey: "orientation")
             
             self.show(player, sender: self)
-            player.view.layer.setAffineTransform(CGAffineTransform(rotationAngle: CGFloat(M_PI)/2.0))
+            player.view.layer.setAffineTransform(CGAffineTransform(rotationAngle: .pi/2.0))
             
             player.moviePlayer.play()
             
@@ -273,16 +272,7 @@ class TutorialViewController: UIViewController {
         GKAchievement.report(achievmentsToReport, withCompletionHandler: nil)
         
     }
-    
-    @IBAction func restorePurchases(_ sender: AnyObject) {
-        
-        PFPurchase.restore()
-        
-        let restoreAlert = UIAlertView(title: "Purchases Restored", message: "Your purchases have been restored.", delegate: self, cancelButtonTitle: "Ok")
-        
-        restoreAlert.show()
-        
-    }
+
     /*
     // MARK: - Navigation
 

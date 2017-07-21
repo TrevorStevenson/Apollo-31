@@ -7,10 +7,9 @@
 //
 
 import UIKit
-import Parse
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, AdColonyDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
@@ -18,44 +17,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AdColonyDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        AdColony.configure(withAppID: "app9f99ceaad38e41cdb4", zoneIDs: ["vzfb7f4d4a22a74bd8ab"], delegate: nil, logging: true)
-        
-        Parse.setApplicationId("Bvbgjy06i5PW3dUtwVPhAj3TKnpQokFfwxDccKA7",
-            clientKey: "k7MMuCQ6pXvBfKqlAZCNxEPza2B747HgUJi6nbTJ")
-        
         // Register for Push Notitications
-        if application.applicationState != UIApplicationState.background {
-            // Track an app open here if we launch with a push, unless
-            // "content_available" was used to trigger a background push (introduced in iOS 7).
-            // In that case, we skip tracking here to avoid double counting the app-open.
-            
-            let preBackgroundPush = !application.responds(to: #selector(getter: UIApplication.backgroundRefreshStatus))
-            let oldPushHandlerOnly = !self.responds(to: #selector(UIApplicationDelegate.application(_:didReceiveRemoteNotification:fetchCompletionHandler:)))
-            var pushPayload = false
-            if let options = launchOptions {
-                pushPayload = options[UIApplicationLaunchOptionsKey.remoteNotification] != nil
-            }
-            if (preBackgroundPush || oldPushHandlerOnly || pushPayload) {
-                PFAnalytics.trackAppOpenedWithLaunchOptions(inBackground: launchOptions, block: nil)
-            }
-        }
         if application.responds(to: #selector(UIApplication.registerUserNotificationSettings(_:))) {
             let userNotificationTypes: UIUserNotificationType = [UIUserNotificationType.alert, UIUserNotificationType.badge, UIUserNotificationType.sound]
             let settings = UIUserNotificationSettings(types: userNotificationTypes, categories: nil)
             application.registerUserNotificationSettings(settings)
             application.registerForRemoteNotifications()
-        } else {
-         
+        }
+        else
+        {
             application.registerForRemoteNotifications()
         }
-        
         
         let userDefaults = UserDefaults.standard
         
         if userDefaults.integer(forKey: "firstTime") == 0
         {
-            userDefaults.set(true, forKey: "showAds")
-            
             userDefaults.set(0, forKey: "wins")
             userDefaults.set(0, forKey: "losses")
             userDefaults.set(0, forKey: "draws")
@@ -75,189 +52,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AdColonyDelegate {
             userDefaults.synchronize()
         }
         
-        PFPurchase.addObserver(forProduct: "htCoins") {
-            (transaction: SKPaymentTransaction?) -> Void in
-            
-            var coins = userDefaults.integer(forKey: "coins")
-            
-            coins += 100000
-            
-            userDefaults.set(coins, forKey: "coins")
-            
-            var money = userDefaults.integer(forKey: "moneySpent")
-            
-            money += 1
-            
-            userDefaults.set(money, forKey: "moneySpent")
-            
-            userDefaults.synchronize()
-            
-        }
-        
-        PFPurchase.addObserver(forProduct: "mCoins") {
-            (transaction: SKPaymentTransaction?) -> Void in
-            
-            var coins = userDefaults.integer(forKey: "coins")
-            
-            coins += 1000000
-            
-            userDefaults.set(coins, forKey: "coins")
-            
-            var money = userDefaults.integer(forKey: "moneySpent")
-            
-            money += 2
-            
-            userDefaults.set(money, forKey: "moneySpent")
-            
-            userDefaults.synchronize()
-            
-        }
-        
-        PFPurchase.addObserver(forProduct: "tmCoins") {
-            (transaction: SKPaymentTransaction?) -> Void in
-            
-            var coins = userDefaults.integer(forKey: "coins")
-            
-            coins += 10000000
-            
-            userDefaults.set(coins, forKey: "coins")
-            
-            var money = userDefaults.integer(forKey: "moneySpent")
-            
-            money += 5
-            
-            userDefaults.set(money, forKey: "moneySpent")
-            
-            userDefaults.synchronize()
-            
-        }
-        
-        PFPurchase.addObserver(forProduct: "hmCoins") {
-            (transaction: SKPaymentTransaction?) -> Void in
-            
-            var coins = userDefaults.integer(forKey: "coins")
-            
-            coins += 100000000
-            
-            userDefaults.set(coins, forKey: "coins")
-            
-            var money = userDefaults.integer(forKey: "moneySpent")
-            
-            money += 10
-            
-            userDefaults.set(money, forKey: "moneySpent")
-            
-            userDefaults.synchronize()
-            
-        }
-        
-        
-        PFPurchase.addObserver(forProduct: "removeAds3") {
-            (transaction: SKPaymentTransaction?) -> Void in
-            
-            userDefaults.set(false, forKey: "showAds")
-            
-            var money = userDefaults.integer(forKey: "moneySpent")
-            
-            money += 1
-            
-            userDefaults.set(money, forKey: "moneySpent")
-            
-            userDefaults.synchronize()
-            
-        }
-        
-        PFPurchase.addObserver(forProduct: "penalty") {
-            (transaction: SKPaymentTransaction?) -> Void in
-            
-            userDefaults.set(true, forKey: "noPenalty")
-            
-            var money = userDefaults.integer(forKey: "moneySpent")
-            
-            money += 10
-            
-            userDefaults.set(money, forKey: "moneySpent")
-            
-            userDefaults.synchronize()
-
-        }
-        
-        PFPurchase.addObserver(forProduct: "resetLD") {
-            (transaction: SKPaymentTransaction?) -> Void in
-            
-            userDefaults.set(0, forKey: "losses")
-            userDefaults.set(0, forKey: "draws")
-            
-            var money = userDefaults.integer(forKey: "moneySpent")
-            
-            money += 2
-            
-            userDefaults.set(money, forKey: "moneySpent")
-            
-            userDefaults.synchronize()
-
-        }
-        
-        PFPurchase.addObserver(forProduct: "reset") {
-            (transaction: SKPaymentTransaction?) -> Void in
-            
-            userDefaults.set(0, forKey: "losses")
-            userDefaults.set(0, forKey: "draws")
-            userDefaults.set(0, forKey: "wins")
-            
-            var money = userDefaults.integer(forKey: "moneySpent")
-            
-            money += 1
-            
-            userDefaults.set(money, forKey: "moneySpent")
-            
-            userDefaults.synchronize()
-            
-        }
-        
-        PFPurchase.addObserver(forProduct: "uPowerUps") {
-            (transaction: SKPaymentTransaction?) -> Void in
-            
-            userDefaults.set(true, forKey: "unlimited")
-            
-            var money = userDefaults.integer(forKey: "moneySpent")
-            
-            money += 20
-            
-            userDefaults.set(money, forKey: "moneySpent")
-            
-            userDefaults.synchronize()
-            
-        }
-        
-        
-        
         return true
     }
     
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        
-        let installation = PFInstallation.current()
-        installation.setDeviceTokenFrom(deviceToken)
-        installation.saveInBackground(block: nil)
-    }
-    
-    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        
-        if error.code == 3010 {
-            print("Push notifications are not supported in the iOS Simulator.")
-        } else {
-            print("application:didFailToRegisterForRemoteNotificationsWithError: %@", error)
-        }
-    }
-    
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
-        
-        PFPush.handle(userInfo)
-        if application.applicationState == UIApplicationState.inactive {
-            PFAnalytics.trackAppOpenedWithRemoteNotificationPayload(inBackground: userInfo, block: nil)
-        }
-    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
