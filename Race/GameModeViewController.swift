@@ -37,16 +37,10 @@ class GameModeViewController: UIViewController, GKMatchmakerViewControllerDelega
         }
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     override func viewDidAppear(_ animated: Bool) {
         
         super.viewDidAppear(animated)
-        
         
         UIView.animate(withDuration: 0.5, delay: 0, options: UIViewAnimationOptions(), animations: { () -> Void in
             
@@ -57,13 +51,7 @@ class GameModeViewController: UIViewController, GKMatchmakerViewControllerDelega
                 eachView.alpha = 1.0
             }
             
-            
-            
-        }) { (success) -> Void in
-            
-            
-            
-        }
+        }) { (success) -> Void in }
         
     }
     
@@ -146,6 +134,7 @@ class GameModeViewController: UIViewController, GKMatchmakerViewControllerDelega
                 let GVC = self.storyboard?.instantiateViewController(withIdentifier: "GVC") as! GameViewController
                 
                 GVC.gameMode = mode
+                
                 if let gameMatch = match
                 {
                     GVC.currentMatch = gameMatch
@@ -154,17 +143,10 @@ class GameModeViewController: UIViewController, GKMatchmakerViewControllerDelega
                 
                 self.navigationController?.pushViewController(GVC, animated: false)
 
-                }
+            }
     }
     
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        
-    }
     
     @IBAction func back(_ sender: AnyObject) {
         

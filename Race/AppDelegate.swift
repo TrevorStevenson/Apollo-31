@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // Register for Push Notitications
-        if application.responds(to: #selector(UIApplication.registerUserNotificationSettings(_:))) {
+        if application.responds(to: #selector(UIApplication.registerUserNotificationSettings(_:)))
+        {
             let userNotificationTypes: UIUserNotificationType = [UIUserNotificationType.alert, UIUserNotificationType.badge, UIUserNotificationType.sound]
             let settings = UIUserNotificationSettings(types: userNotificationTypes, categories: nil)
             application.registerUserNotificationSettings(settings)

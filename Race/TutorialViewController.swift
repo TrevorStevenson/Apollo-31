@@ -50,14 +50,7 @@ class TutorialViewController: UIViewController {
                 eachView.alpha = 1.0
             }
             
-            
-            
-            }) { (success) -> Void in
-                
-                
-                
-        }
-        
+            }) { (success) -> Void in }
     }
 
     override func viewWillLayoutSubviews() {
@@ -85,7 +78,6 @@ class TutorialViewController: UIViewController {
     
     func animateOut(_ toViewController: UIViewController)
     {
-        
         UIView.animate(withDuration: 0.1, delay: 0, options: UIViewAnimationOptions(), animations: { () -> Void in
             
             for element in self.view.subviews
@@ -235,9 +227,7 @@ class TutorialViewController: UIViewController {
             player.moviePlayer.play()
             
             NotificationCenter.default.addObserver(self, selector: #selector(TutorialViewController.playerDidFinish), name: NSNotification.Name.MPMoviePlayerPlaybackDidFinish, object: nil)
-            
         }
-        
     }
     
     func playerDidFinish()

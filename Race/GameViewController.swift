@@ -95,8 +95,6 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
     var defenseTimer = Timer()
     var defense30 = 30
 
-
-    
     //view controller life cycle
     
     override func viewDidLoad() {
@@ -117,7 +115,6 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
         powerUpTwo.isEnabled = false
         powerUpThree.isEnabled = false
         powerUpFour.isEnabled = false
-        
         
         currentCoins = UserDefaults.standard.integer(forKey: "coins")
         

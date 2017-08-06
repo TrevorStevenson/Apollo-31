@@ -133,17 +133,7 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate, GKMa
             
             self.view.addSubview(leaderboardButton)
             
-            shopButton = UIButton(frame: CGRect(x: 0, y: (3 * viewSize.height)/(2) + buttonHeight/2 + separation, width: viewSize.width, height: buttonHeight))
-            shopButton.addTarget(self, action: #selector(MainViewController.shop), for: .touchUpInside)
-            shopButton.setTitle("Shop", for: UIControlState())
-            shopButton.titleLabel?.font = UIFont(name: "Star Jedi", size: 25)
-            shopButton.setTitleColor(UIColor.white, for: UIControlState())
-            shopButton.setBackgroundImage(UIImage(named: "Race Button"), for: UIControlState())
-
-            self.view.addSubview(shopButton)
-            
             didLayoutSubviews = true
-
         }
         
         
@@ -153,48 +143,25 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate, GKMa
     {
         let localPlayer = GKLocalPlayer.localPlayer()
         
-        localPlayer.authenticateHandler = { (viewController: UIViewController?, error: NSError?) -> Void in
+        localPlayer.authenticateHandler = {(viewController: UIViewController?, error: Error?) in
             
-            if viewController != nil
-            {
-                self.present(viewController!, animated: true, completion: nil)
-            }
-            else if localPlayer.isAuthenticated
-            {
-                self.gameCenterEnabled = true
-                /*
-                GKNotificationBanner.showBannerWithTitle("Welcome \(localPlayer.alias)", message: nil, completionHandler: { () -> Void in
-                    
-                })
-                */
-                localPlayer.register(self)
-                
-                GKLocalPlayer.localPlayer().loadDefaultLeaderboardIdentifier(completionHandler: { (leaderboardIdentifier:String?, error:NSError?) -> Void in
-                    
-                    if (error != nil)
-                    {
-                        print(error!.localizedDescription)
-                    }
-                    else
-                    {
-                        self.leaderboardIdentifier = leaderboardIdentifier!
-                        
-                       
-                    }
-                    
-                } as! (String?, Error?) -> Void)
-
-            }
+            if let VC = viewController { self.present(VC, animated: true, completion: nil) }
             else
             {
-                self.gameCenterEnabled = false
+                self.gameCenterEnabled = GKLocalPlayer.localPlayer().isAuthenticated
+                
+                guard self.gameCenterEnabled else { return }
+                
+                GKLocalPlayer.localPlayer().loadDefaultLeaderboardIdentifier(completionHandler: { (leaderboardID: String?, error: Error?) -> Void in
+                    
+                    guard error != nil else { return }
+                    
+                    if let identifier = leaderboardID { self.leaderboardIdentifier = identifier }
+                })
             }
-            
-        } as! (UIViewController?, Error?) -> Void
-        
-        
+        }
     }
-    
+
     func gameCenterViewControllerDidFinish(_ gameCenterViewController: GKGameCenterViewController)
     {
         dismiss(animated: true, completion: nil)
@@ -245,7 +212,6 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate, GKMa
                 match.delegate = GVC
                 
                 self.navigationController?.pushViewController(GVC, animated: false)
-                
         }
     }
     
@@ -298,7 +264,6 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate, GKMa
     
     func animateOut(_ toViewController: UIViewController)
     {
-        
         UIView.animate(withDuration: 0.1, delay: 0, options: UIViewAnimationOptions(), animations: { () -> Void in
             
             self.titleLabel.center.y += 10
@@ -330,18 +295,17 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate, GKMa
                         self.navigationController?.pushViewController(toViewController, animated: false)
                         
                 })
-                
         }
-
-
-
     }
     
     func play() {
         
-        let GMVC = storyboard?.instantiateViewController(withIdentifier: "GMVC") as! GameModeViewController
+        let GVC = self.storyboard?.instantiateViewController(withIdentifier: "GVC") as! GameViewController
         
-        animateOut(GMVC)
+        GVC.gameMode = "Time Trials"
+        
+        
+        animateOut(GVC)
         
     }
 
@@ -357,17 +321,8 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate, GKMa
         
         present(GCVC, animated: true, completion: nil)
         
-        
-        
     }
    
-    func shop() {
-        
-        let SVC = storyboard?.instantiateViewController(withIdentifier: "SVC") as! ShopViewController
-        
-        animateOut(SVC)
-    }
-    
     @IBAction func help(_ sender: AnyObject) {
         
         let TVC = storyboard?.instantiateViewController(withIdentifier: "TVC") as! TutorialViewController

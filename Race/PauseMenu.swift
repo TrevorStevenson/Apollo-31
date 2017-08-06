@@ -18,7 +18,6 @@ class PauseMenu: UIView {
     override func draw(_ rect: CGRect) {
         // Drawing code
         
-        
         let bg = UIImageView(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height))
         bg.image = UIImage(named: "Pause Menu")
         
@@ -41,12 +40,9 @@ class PauseMenu: UIView {
             quitButton.titleLabel?.font = UIFont(name: "Star Jedi", size: 18)
             
             self.addSubview(quitButton)
-
-
         }
         if pauseGameMode == "Time Trials"
         {
-            
             let resumeButton = UIButton(frame: CGRect(x: 10, y: 18, width: self.frame.size.width - 20, height: 35))
             resumeButton.addTarget(self, action: #selector(PauseMenu.resume), for: UIControlEvents.touchUpInside)
             resumeButton.setTitle("Resume", for: UIControlState())
@@ -70,12 +66,7 @@ class PauseMenu: UIView {
             quitButton.titleLabel?.font = UIFont(name: "Star Jedi", size: 18)
             
             self.addSubview(quitButton)
-            
-            
-            
         }
-        
-        
     }
     
     func restart()

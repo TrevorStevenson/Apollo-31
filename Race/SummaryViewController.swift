@@ -38,12 +38,6 @@ class SummaryViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        if UserDefaults.standard.bool(forKey: "showAds")
-        {
-            AdColony.playVideoAd(forZone: "vzfb7f4d4a22a74bd8ab", with: nil)
-        }
-        
         var identifiers: [String] = []
         
         let wins = UserDefaults.standard.integer(forKey: "wins")
