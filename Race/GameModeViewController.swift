@@ -166,15 +166,14 @@ class GameModeViewController: UIViewController, GKMatchmakerViewControllerDelega
                     eachView.alpha = 0.0
 
                 }
-                
             }
             
             }) { (success) -> Void in
                 
-                let MVC = self.storyboard?.instantiateViewController(withIdentifier: "MVC") as! MainViewController
-                
-                self.navigationController?.pushViewController(MVC, animated: false)
-                
+                if let MVC = self.storyboard?.instantiateViewController(withIdentifier: "MVC") as? MainViewController
+                {
+                    self.navigationController?.pushViewController(MVC, animated: false)
+                }
         }
     }
     
@@ -183,7 +182,7 @@ class GameModeViewController: UIViewController, GKMatchmakerViewControllerDelega
         let button = sender as! UIButton
         
         if button.titleLabel?.text == "online"
-        {            
+        {
             findMatch()
         }
         else if button.titleLabel?.text == "Time Trials"

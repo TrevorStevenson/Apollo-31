@@ -30,14 +30,14 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
     @IBOutlet weak var powerUpThree: UIButton!
     @IBOutlet weak var powerUpFour: UIButton!
     @IBOutlet weak var coinsLabel: UILabel!
-    
-    //constraints
+
+    // constraints
     
     @IBOutlet weak var leftHorizontalSpace: NSLayoutConstraint!
     @IBOutlet weak var rightHorizontalSpace: NSLayoutConstraint!
     @IBOutlet weak var barHeight: NSLayoutConstraint!
-    
-    //gesture outlets
+
+    // gesture outlets
     @IBOutlet var tapGesture: UITapGestureRecognizer!
     @IBOutlet var swipeUp: UISwipeGestureRecognizer!
     @IBOutlet var swipeRight: UISwipeGestureRecognizer!
@@ -249,8 +249,6 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
                 {
                     eachView.alpha = 0.0
                 }
-                
-                
             }
             
             shouldLayout = false
@@ -305,17 +303,19 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
                     isGameReady = false
                     view.isUserInteractionEnabled = false
                     
-                    let summary = storyboard?.instantiateViewController(withIdentifier: "Summary") as! SummaryViewController
-                    
-                    summary.summaryGameMode = gameMode
-                    summary.correct = numberCorrect
-                    summary.incorrect = numberIncorrect
-                    summary.didDraw = true
-                    summary.didWin = false
-                    summary.secret = 317
+                    let summary = storyboard?.instantiateViewController(withIdentifier: "Summary") as? SummaryViewController
+                        
+                    if let sumVC = summary
+                    {
+                        sumVC.summaryGameMode = gameMode
+                        sumVC.correct = numberCorrect
+                        sumVC.incorrect = numberIncorrect
+                        sumVC.didDraw = true
+                        sumVC.didWin = false
+                        sumVC.secret = 317
+                    }
                     
                     currentMatch!.disconnect()
-                    
                     currentMatch = nil
                     
                     UIView.animate(withDuration: 0.5, delay: 0, options: UIViewAnimationOptions(), animations: { () -> Void in
@@ -348,8 +348,10 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
                         
                         }) { (success) -> Void in
                             
-                            self.navigationController?.pushViewController(summary, animated: false)
-                            
+                            if let sumVC = summary
+                            {
+                               self.navigationController?.pushViewController(sumVC, animated: false)
+                            }
                     }
                 }
             }
@@ -357,15 +359,8 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
             break
             
         default:
-            
-            //do nothing
-            
             break
-            
-            
         }
-        
-        
     }
     
     func match(_ match: GKMatch, shouldReinviteDisconnectedPlayer player: GKPlayer) -> Bool {
@@ -563,7 +558,7 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
     
     }
     
-    //game functions
+    // game functions
   
     func countdown() {
         
@@ -626,7 +621,7 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
                 
                 if timerMinutes == 0
                 {
-                    //game over
+                    // game over
                     
                     self.matchStarted = false
                     
@@ -634,13 +629,16 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
                     isGameReady = false
                     view.isUserInteractionEnabled = false
                     
-                    let summary = storyboard?.instantiateViewController(withIdentifier: "Summary") as! SummaryViewController
+                    let summary = storyboard?.instantiateViewController(withIdentifier: "Summary") as? SummaryViewController
                     
-                    summary.summaryGameMode = gameMode
-                    summary.correct = numberCorrect
-                    summary.incorrect = numberIncorrect
-                    summary.didDraw = true
-                    summary.didWin = false
+                    if let sumVC = summary
+                    {
+                        sumVC.summaryGameMode = gameMode
+                        sumVC.correct = numberCorrect
+                        sumVC.incorrect = numberIncorrect
+                        sumVC.didDraw = true
+                        sumVC.didWin = false
+                    }
                     
                     var draws = UserDefaults.standard.integer(forKey: "draws")
                     
@@ -684,18 +682,17 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
                         
                         }) { (success) -> Void in
                             
-                            self.navigationController?.pushViewController(summary, animated: false)
-                            
+                            if let sumVC = summary
+                            {
+                                self.navigationController?.pushViewController(sumVC, animated: false)
+                            }
                     }
-
-                    
                 }
                 else
                 {
                     timerSeconds = 59
                     timerMinutes -= 1
                 }
-                
             }
             else
             {
@@ -798,8 +795,6 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
             instructionLabel.text = "Swipe up"
             
         }
-        
-        
     }
     
     func correct()
@@ -820,7 +815,6 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
             if gameMode == "Online"
             {
                 sendData("Victory")
-
             }
             
             win()
@@ -847,7 +841,6 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
             
             createInstruction()
         }
-
     }
     
     func incorrect()
@@ -893,8 +886,6 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
         progressLabel.text = "\(currentProgress)/100"
 
         createInstruction()
-
-
     }
     
     func win()
@@ -903,7 +894,7 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
         isGameReady = false
         view.isUserInteractionEnabled = false
         
-        let summary = storyboard?.instantiateViewController(withIdentifier: "Summary") as! SummaryViewController
+        guard let summary = storyboard?.instantiateViewController(withIdentifier: "Summary") as? SummaryViewController else { return }
         
         if gameMode == "Time Trials"
         {
@@ -939,7 +930,6 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
             }
         }
         
-        
         summary.summaryGameMode = gameMode
         summary.gameMinutes = timerMinutes
         summary.gameSeconds = timerSeconds
@@ -958,11 +948,9 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
             currentMatch = nil
             
             var wins = UserDefaults.standard.integer(forKey: "wins")
-            
             wins += 1
             
             UserDefaults.standard.set(wins, forKey: "wins")
-            
             UserDefaults.standard.synchronize()
             
             summary.didWin = true
@@ -979,21 +967,16 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
                     if eachView.tag == 1
                     {
                         eachView.alpha = 0.0
-
                     }
                     else
                     {
                         eachView.alpha = 1.0
-
                     }
-                    
                 }
                 else
                 {
                     eachView.alpha = 0.0
-                    
                 }
-                
             }
             
             }) { (success) -> Void in
@@ -1001,9 +984,6 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
                 self.navigationController?.pushViewController(summary, animated: false)
 
         }
-
-        
-       
     }
     
     func loss()
@@ -1012,7 +992,7 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
         isGameReady = false
         view.isUserInteractionEnabled = false
         
-        let summary = storyboard?.instantiateViewController(withIdentifier: "Summary") as! SummaryViewController
+        guard let summary = storyboard?.instantiateViewController(withIdentifier: "Summary") as? SummaryViewController else { return }
         
         summary.summaryGameMode = gameMode
         summary.correct = numberCorrect
@@ -1044,21 +1024,16 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
                     if eachView.tag == 1
                     {
                         eachView.alpha = 0.0
-                        
                     }
                     else
                     {
                         eachView.alpha = 1.0
-                        
                     }
-                    
                 }
                 else
                 {
                     eachView.alpha = 0.0
-                    
                 }
-                
             }
             
             }) { (success) -> Void in
@@ -1066,11 +1041,9 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
                 self.navigationController?.pushViewController(summary, animated: false)
                 
         }
-
     }
-
     
-    //gestures
+    // gestures
     
     func checkRecognizer(_ sender: UIGestureRecognizer)
     {
@@ -1078,14 +1051,12 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
         {
             isGameReady = true
         }
-        
     }
     
     @IBAction func tapGesture(_ sender: UITapGestureRecognizer) {
         
         if isGameReady
         {
-            
             isGameReady = false
             
             if randomInteger == 0
@@ -1096,41 +1067,34 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
             {
                 incorrect()
             }
-            
         }
 
         if sender.state == .ended
         {
             isGameReady = true
         }
-        
     }
     
     @IBAction func pinchGesture(_ sender: UIPinchGestureRecognizer) {
         
         if isGameReady
         {
-            
             isGameReady = false
             
             if randomInteger == 1
             {
                 correct()
-                
             }
             else
             {
                 incorrect()
             }
-            
         }
-            
       
         if sender.state == .ended
         {
             isGameReady = true
         }
-        
     }
     
     @IBAction func swipeGesture(_ sender: UISwipeGestureRecognizer) {
