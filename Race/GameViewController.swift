@@ -1112,43 +1112,36 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
                 else if swipeCode == 1 && sender.direction == .right
                 {
                     correct()
-                    
                 }
                 else if swipeCode == 2 && sender.direction == .down
                 {
                     correct()
-                    
                 }
                 else if swipeCode == 3 && sender.direction == .left
                 {
-                    
                     correct()
                 }
                 else
                 {
                     incorrect()
                 }
-                
             }
             else
             {
                 incorrect()
             }
-            
         }
      
         if sender.state == .ended
         {
             isGameReady = true
         }
-        
     }
     
     @IBAction func longPressGesture(_ sender: UILongPressGestureRecognizer) {
      
         if isGameReady
         {
-            
             isGameReady = false
             
             if randomInteger == 3
@@ -1159,22 +1152,19 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
             {
                 incorrect()
             }
-            
         }
-            
-       
+        
         if sender.state == .ended
         {
             isGameReady = true
         }
-
     }
     
     
-    //power ups
+    // power ups
     
-    @IBAction func powerUpOne(_ sender: AnyObject) {
-        
+    @IBAction func powerUpOne(_ sender: AnyObject)
+    {
         clearTimer.invalidate()
         zapUpdateTimer.invalidate()
         multiplyTimer.invalidate()
@@ -1213,7 +1203,6 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
                 activityLabel.layer.add(scaleAnimation, forKey: nil)
                 
                 zapUpdateTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameViewController.updateZapCountdown), userInfo: nil, repeats: true)
-                
             }
             else if gameMode == "Time Trials"
             {
@@ -1230,7 +1219,6 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
                 activityLabel.layer.add(scaleAnimation, forKey: nil)
                 
                 zapUpdateTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameViewController.updateZapCountdown), userInfo: nil, repeats: true)
-                
             }
             
             powerUp1Label.text = "30s"
@@ -1239,13 +1227,11 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
             powerUpOne.alpha = 0.4
             
             powerUp1Timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameViewController.powerUp1Cooldown), userInfo: nil, repeats: true)
-
         }
         else
         {
             activityLabel.text = "Your opponent prevented you from using power ups!"
         }
-        
     }
     
     func zapCountdown()
@@ -1256,7 +1242,6 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
         self.view.isUserInteractionEnabled = true
         
         createInstruction()
-        
     }
     
     func updateZapCountdown()
@@ -1291,11 +1276,10 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
             zap10 = 10
             
         }
-        
     }
 
-    @IBAction func powerUpTwo(_ sender: AnyObject) {
-        
+    @IBAction func powerUpTwo(_ sender: AnyObject)
+    {
         clearTimer.invalidate()
         zapUpdateTimer.invalidate()
         multiplyTimer.invalidate()
@@ -1342,11 +1326,7 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
                 sendData("Power Up 2")
                 
                 powerUp2Timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameViewController.powerUp2Cooldown), userInfo: nil, repeats: true)
-                
-            }
-            else if gameMode == "Time Trials"
-            {
-                
+
             }
             
             powerUp2Label.text = "30s"
@@ -1355,13 +1335,11 @@ class GameViewController: UIViewController, GKMatchDelegate, UIAlertViewDelegate
             powerUpTwo.alpha = 0.4
             
             powerUp2Timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameViewController.powerUp2Cooldown), userInfo: nil, repeats: true)
-
         }
         else
         {
             activityLabel.text = "Your opponent prevented you from using power ups!"
         }
-        
     }
     
     func clearActivityLabel()
